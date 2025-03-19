@@ -114,8 +114,6 @@ if st.button("Predict"):
         WELCOME TO THE {favorite_line} LINE
         """)
 
-        from PIL import Image
-
         st.image(f"raw_data/{favorite_line}.png")
         
         st.write("And this is the ranking of the lines based on your preferences:")
