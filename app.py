@@ -172,7 +172,7 @@ if st.button("Predict"):
         df_final["Rank"] = df_final.index 
         df_final = df_final[["Rank", "Line", "Score"]]
         df_final.set_index("Rank", inplace=True)
-        
+        favorite_line = df_final["Line"].iloc[0]
        
         
         # df_final.drop(columns = "line", inplace = True)
@@ -201,7 +201,7 @@ if st.button("Predict"):
         st.write(df_final)
 
 # Store the top-ranked line
-        favorite_line = df_final["Line"].iloc[0]
+        
 
         st.balloons()
 
