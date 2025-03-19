@@ -141,10 +141,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Add content inside columns
-col1.write("Column 1")
-col2.write("Column 2")
-col3.write("Column 3")
-col4.write("Column 4")
 
 
 st.markdown("""
