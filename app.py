@@ -11,7 +11,7 @@ st.markdown(
     <style>
     .title {
         color: SafetyBlue;
-        font-size: 26px;
+        font-size: 50px;
         text-align: left;
         font-family: 'Johnston';
         font-weight: bold;
