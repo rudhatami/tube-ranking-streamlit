@@ -3,5 +3,4 @@ pandas
 streamlit
 plotly
 requests
-pillow
 os
