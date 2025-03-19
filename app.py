@@ -59,7 +59,7 @@ st.markdown(
         font-family: 'Hammersmith One';
         font-weight: bold;
         text-shadow: 1px 1px24px #000000;
-        border-bottom: 3px solid #add8e6;
+        border-bottom: 3px solid ##0009AB;
         padding-bottom: 10px;
     
     }
