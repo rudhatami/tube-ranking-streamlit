@@ -1,0 +1,6 @@
+[client]
+showErrorDetails = "none"
+
+[theme]
+base="light"
+backgroundColor="#b3b3b3"
