@@ -119,7 +119,9 @@ st.markdown("""
     <h2 style="font-weight: bold; color: #4B56FF;">
         Welcome to your individualised <strong>Ranking</strong>! 
     </h2>
-    <h4 style="font-size: 20px; font-weight: normal;">
+    <br><br>
+    <br><br>
+    <h4 style="font-size: 18px; font-weight: normal;">
         Please weigh the below <strong>factors</strong> in terms of your priorities when taking the <strong>tube</strong>:
     </h4>
 """, unsafe_allow_html=True)
