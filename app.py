@@ -129,11 +129,12 @@ if st.button("Predict"):
         favorite_line = df_final["line"][0]
 
 
-        st.write(f"It's official! /t Your favorite line is the {favorite_line} line")
+        st.write(f"It's official!
+        Your favorite line is the {favorite_line} line")
 
-        st.markdown(f"""
-        WELCOME TO THE {favorite_line} LINE
-        """)
+        # st.markdown(f"""
+        # WELCOME TO THE {favorite_line} LINE
+        # """)
 
         st.image(f"raw_data/{favorite_line}.png")
         
