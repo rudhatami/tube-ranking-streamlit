@@ -169,7 +169,7 @@ if st.button("Predict"):
         df_final = df[["line", "Score"]].sort_values(by = "Score", ascending = False).reset_index(drop = True)
         
         df_final.rename(columns={"line": "Line"}, inplace=True)
-        df_final["Rank"] = df_final.index + 1
+        df_final["Rank"] = df_final.index 
         df_final = df_final[["Rank", "Line", "Score"]]
         df_final.set_index("Rank", inplace=True)
         st.write(df_final)
