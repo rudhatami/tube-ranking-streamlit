@@ -36,23 +36,23 @@ st.markdown("""
 
 # Custom CSS for styling the title
 
-# st.markdown(
-#     """
-#     <style>
-#     .title {
-#         color: SafetyBlue;
-#         font-size: 50px;
-#         text-align: left;
-#         font-family: 'Gill Sans';
-#         font-weight: bold;
-#         text-shadow: 1px 1px24px #000000;
-#         border-bottom: 3px solid #add8e6;
-#         padding-bottom: 10px;
-#     }
-#     </style>
-#     """,
-#     unsafe_allow_html=True
-# )
+st.markdown(
+    """
+    <style>
+    .title {
+        color: SafetyBlue;
+        font-size: 50px;
+        text-align: left;
+        font-family: 'Hammersmith One';
+        font-weight: bold;
+        text-shadow: 1px 1px24px #000000;
+        border-bottom: 3px solid #add8e6;
+        padding-bottom: 10px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 
 
