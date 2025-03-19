@@ -4,7 +4,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from PIL import Image
-import os
 
 
 # Custom CSS for styling the title
@@ -102,7 +101,7 @@ if st.button("Predict"):
 
         from PIL import Image
 
-        image = Image.open(os.path.join(os.getcwd(), f'raw_data/{favorite_line}.png'))
+        image = Image.open(f'raw_data/{favorite_line}.png'))
         st.image(image, use_column_width=False)
         st.write("And this is the ranking of the lines based on your preferences:")
 
