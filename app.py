@@ -23,7 +23,8 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-st.raw_data/tfl_logo.svg.png
+Image.open('raw_data/tfl_logo.svg.png'))
+# st.raw_data/tfl_logo.svg.png
 # Model metrics
 
 col3, col4, col5 = st.columns(3)
