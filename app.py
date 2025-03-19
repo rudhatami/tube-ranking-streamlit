@@ -53,12 +53,14 @@ st.markdown(
     """
     <style>
     .title {
-        color: SafetyBlue;
+        color: #0009AB;
         font-size: 100px;
         text-align: left;
         font-family: 'Hammersmith One';
         font-weight: bold;
         text-shadow: 1px 1px24px #000000;
+        border-bottom: 3px solid #add8e6;
+        padding-bottom: 10px;
     
     }
     </style>
