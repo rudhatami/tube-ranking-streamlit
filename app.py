@@ -11,13 +11,12 @@ st.markdown("""
         @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
         
         body {
-            font-family: 'Ariel', sans-serif;
+            font-family: 'Hammersmith One', sans-serif;
         }
     </style>
     """, unsafe_allow_html=True)
 
 # Example text to test
-st.write("This text is displayed with the Hammersmith One font!")
 
 
 # Custom CSS for styling the title
