@@ -33,7 +33,7 @@ st.markdown("""
         /* Styling for the button */
         .css-1emrehy {
             font-family: 'Hammersmith One', sans-serif;
-            background-color: #ff5733;  /* Example color */
+            background-color: #4B56FF;  /* New background color */
             color: white;  /* Text color */
             border-radius: 5px;
             padding: 10px 20px;
