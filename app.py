@@ -55,7 +55,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.markdown("<h1 class = 'Title'> Welcome to your individualised Ranking : <h1>")
+st.markdown("<h1 class = 'title'> Welcome to your individualised Ranking : <h1>")
 
 comfort = st.number_input("Comfort (%)", min_value=0, max_value=100, step = 10)/100
 
