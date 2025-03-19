@@ -138,7 +138,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-col1, col2, col3, col4 = st.columns(4)
+col1, col2, col3 = st.columns(3)
 
 
 with col1:
@@ -149,12 +149,12 @@ with col2:
     
 with col3:
     reliability = st.number_input("Reliability (%)", min_value=0, max_value=100, step=10) / 100
+
+
+
+col4,col5, col6, col7 = st.columns(4)
 with col4:
     connectivity = st.number_input("Connectivity (%)", min_value=0, max_value=100, step=10) / 100
-
-
-col5, col6, col7 = st.columns(3)
-
 with col5:
      comfort = st.number_input("Comfort (%)", min_value=0, max_value=100, step=10) / 100
     
@@ -163,7 +163,7 @@ with col6:
 with col7:
     cost_living = st.number_input("Cost of Living (%)", min_value=0, max_value=100, step=10) / 100
 
-total = comfort + culture + crowding + cost_living + security + connectivity + reliability * 100
+    total = comfort + culture + crowding + cost_living + security + connectivity + reliability * 100
     st.write(f'The sum of your total should be 100: {total}')
 
 
