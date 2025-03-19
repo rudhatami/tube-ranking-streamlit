@@ -163,6 +163,9 @@ with col6:
 with col7:
     cost_living = st.number_input("Cost of Living (%)", min_value=0, max_value=100, step=10) / 100
 
+total = comfort + culture + crowding + cost_living + security + connectivity + reliability * 100
+    st.write(f'The sum of your total should be 100: {total}')
+
 
 
 # col1, col2, col3 = st.columns(3)
