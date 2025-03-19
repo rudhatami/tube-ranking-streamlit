@@ -25,7 +25,13 @@ st.markdown(
 )
 
 
-img = Image.open("raw_data/tfl_logo.svg.png")
+import cairosvg
+
+cairosvg.svg2png(url="raw_data/tfl_logo.svg", write_to="raw_data/tfl_logo.png")
+
+from PIL import Image
+img = Image.open("raw_data/tfl_logo.png")
+
 
 # st.raw_data/tfl_logo.svg.png
 # Model metrics
