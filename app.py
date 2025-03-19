@@ -138,7 +138,8 @@ if st.button("Predict"):
         st.image(f"raw_data/{favorite_line}.png")
         
         st.write("And this is the ranking of the lines based on your preferences:")
-
+        
+        df_final.index = df_final.index + 1
         st.write(df_final)
 
         st.balloons()
