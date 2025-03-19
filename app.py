@@ -28,13 +28,13 @@ st.markdown(
 
 
 #import cairosvg
-cairosvg.svg2png(url="raw_data/tfl_logo.svg", write_to="raw_data/tfl_logo.png")
+#cairosvg.svg2png(url="raw_data/tfl_logo.svg", write_to="raw_data/tfl_logo.png")
 
-from PIL import Image
-import streamlit as st
+#from PIL import Image
+#import streamlit as st
 
-img = Image.open("raw_data/tfl_logo.png")
-st.image(img)
+#img = Image.open("raw_data/tfl_logo.png")
+#st.image(img)
 
 
 
