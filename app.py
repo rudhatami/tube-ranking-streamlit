@@ -9,6 +9,9 @@ from PIL import Image
 import streamlit as st
 
 # Inject custom CSS to change the font to Hammersmith One
+import streamlit as st
+
+# Inject custom CSS to change the font to Hammersmith One
 st.markdown("""
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
@@ -18,21 +21,17 @@ st.markdown("""
             font-family: 'Hammersmith One', sans-serif;
         }
         
-        /* If you want to change the font for specific elements, you can target them like this */
-        h1, h2, h3, h4, h5, h6 {
+        /* Specific font settings for headers, including the title */
+        h1, h2, h3, h4, h5, h6, .css-1d391kg {
             font-family: 'Hammersmith One', sans-serif;
         }
         
-        p, div, span, .css-1d391kg {
+        /* For the main title (st.title) */
+        .css-1y4kczv {
             font-family: 'Hammersmith One', sans-serif;
         }
     </style>
     """, unsafe_allow_html=True)
-
-# Example text to test
-st.write("This text should be displayed with the Hammersmith One font!")
-
-# Example text to test
 
 
 # Custom CSS for styling the title
