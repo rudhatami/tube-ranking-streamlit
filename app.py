@@ -124,9 +124,9 @@ if st.button("Predict"):
 
         df["Final_Score"] = df.Culture*culture + df.Comfort*comfort + df.Crowding_update*crowding + df.Cost_of_Living_update*cost_living + df.Security_update*security + df.Connectivity*connectivity + df.Reliability*reliability
 
-        df_final = df[["Line", "Final_Score"]].sort_values(by = "Final_Score", ascending = False).reset_index(drop = True)
+        df_final = df[["line", "Final_Score"]].sort_values(by = "Final_Score", ascending = False).reset_index(drop = True)
 
-        favorite_line = df_final["Line"][0]
+        favorite_line = df_final["line"][0]
 
 
         st.write(f"Your favorite line is the {favorite_line} line")
