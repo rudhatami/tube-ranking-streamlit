@@ -38,7 +38,7 @@ st.markdown(
     """
     <style>
     body {
-        background-color: #f0f8ff;  /* Light blue background */
+        background-color: #0025A8;  /* Light blue background */
     }
     h1 {
         color: darkblue;
