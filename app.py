@@ -176,6 +176,8 @@ if st.button("Predict"):
 
         df_final = df[["line", "Score"]].sort_values(by = "Score", ascending = False).reset_index(drop = True)
         df_final['Line'] = df_final['line']
+        df_final.drop(columns = "line", inplace = True)
+        df_final = df_final['Line', 'Score']
 
         favorite_line = df_final["line"][0]
 
