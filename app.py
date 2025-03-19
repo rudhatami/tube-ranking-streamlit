@@ -27,7 +27,7 @@ st.markdown(
 
 
 
-import cairosvg
+#import cairosvg
 cairosvg.svg2png(url="raw_data/tfl_logo.svg", write_to="raw_data/tfl_logo.png")
 
 from PIL import Image
@@ -116,8 +116,8 @@ if st.button("Predict"):
 
         from PIL import Image
 
-        # image = Image.open(f'raw_data/{favorite_line}.png'))
-        # st.image(image, use_column_width=False)
+        st.image(f"raw_data/{favorite_line}.png")
+        
         st.write("And this is the ranking of the lines based on your preferences:")
 
         st.write(df_final)
