@@ -167,11 +167,16 @@ if st.button("Predict"):
         df["Score"] = df.Culture*culture + df.Comfort*comfort + df.Crowding_update*crowding + df.Cost_of_Living_update*cost_living + df.Security_update*security + df.Connectivity*connectivity + df.Reliability*reliability
 
         df_final = df[["line", "Score"]].sort_values(by = "Score", ascending = False).reset_index(drop = True)
-        df_final['Line'] = df_final['line']
-        df_final.drop(columns = "line", inplace = True)
-        df_final['Rank'] = df_final.index + 1
+        
+        df_final.rename(columns={"line": "Line"}, inplace=True)
+        df_final["Rank"] = df_final.index + 1
         df_final = df_final[["Rank", "Line", "Score"]]
-        st.write(df_final.style.hide(axis="index"))
+        df_final.set_index("Rank", inplace=True)
+        
+        # df_final.drop(columns = "line", inplace = True)
+        # df_final['Rank'] = df_final.index + 1
+        # df_final = df_final[["Rank", "Line", "Score"]]
+        # st.write(df_final.style.hide(axis="index"))
         favorite_line = df_final["Line"][0]
 
 
