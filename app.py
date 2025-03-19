@@ -151,9 +151,6 @@ with col3:
     reliability = st.number_input("Reliability (%)", min_value=0, max_value=100, step=10) / 100
 with col4:
     connectivity = st.number_input("Connectivity (%)", min_value=0, max_value=100, step=10) / 100
-    
-    total = comfort + culture + crowding + cost_living + security + connectivity + reliability
-    st.write(f'This is the sum of your total: {total}')
 
 
 col5, col6, col7 = st.columns(3)
