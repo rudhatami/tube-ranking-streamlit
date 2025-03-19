@@ -25,7 +25,7 @@ st.markdown(
 )
 
 
-st.image("raw_data/tfl_logo.svg")
+img = Image.open("raw_data/tfl_logo.svg.png")
 
 # st.raw_data/tfl_logo.svg.png
 # Model metrics
