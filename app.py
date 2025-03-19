@@ -33,8 +33,8 @@ st.markdown(
 #from PIL import Image
 #import streamlit as st
 
-#img = Image.open("raw_data/tfl_logo.png")
-#st.image(img)
+img = Image.open("raw_data/tfl_logo.png")
+st.image(img)
 
 
 
