@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 from PIL import Image
-pip install cairosvg
+
 
 
 # Custom CSS for styling the title
@@ -27,13 +27,15 @@ st.markdown(
 
 
 
-
 import cairosvg
-
 cairosvg.svg2png(url="raw_data/tfl_logo.svg", write_to="raw_data/tfl_logo.png")
 
 from PIL import Image
+import streamlit as st
+
 img = Image.open("raw_data/tfl_logo.png")
+st.image(img)
+
 
 
 
