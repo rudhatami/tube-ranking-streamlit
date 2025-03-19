@@ -45,9 +45,9 @@ st.image(img)
 
 col3, col4, col5 = st.columns(3)
 
-col3.metric("Model Accuracy", "90%")
-col4.metric("Model Precision", "90%")
-col5.metric("Model Recall", "87%")
+# col3.metric("Model Accuracy", "90%")
+# col4.metric("Model Precision", "90%")
+# col5.metric("Model Recall", "87%")
 
 
 # Custom CSS for styling
