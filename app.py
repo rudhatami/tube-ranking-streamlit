@@ -115,7 +115,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.markdown("<h3 class = 'title'> Welcome to your individualised Ranking : </h3>", unsafe_allow_html = True)
+st.markdown("<h3 class = 'title'> Welcome to your individualised **Ranking**! <br><br><br><br> Please weigh the below **factors** in terms of **your priorities** when taking the **tube**: </h3>", unsafe_allow_html = True)
 
 
 # Create three columns
