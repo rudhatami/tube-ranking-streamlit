@@ -25,12 +25,10 @@ st.markdown(
 )
 
 
-import cairosvg
 
-cairosvg.svg2png(url="raw_data/tfl_logo.svg", write_to="raw_data/tfl_logo.png")
 
-from PIL import Image
-img = Image.open("raw_data/tfl_logo.png")
+st.image("raw_data/tfl_logo.svg")  # Streamlit can handle SVGs directly
+
 
 
 # st.raw_data/tfl_logo.svg.png
