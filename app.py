@@ -114,34 +114,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-# Create columns
-col1, col2, col3, col4 = st.columns(4)
-
-# Apply custom styling
-st.markdown("""
-    <style>
-        /* Adjust column spacing */
-        div[data-testid="column"] {
-            padding: 10px;
-        }
-        
-        /* Add background color */
-        div[data-testid="column"]:nth-of-type(1) { background-color: #f0f0f0; }  /* Column 1 */
-        div[data-testid="column"]:nth-of-type(2) { background-color: #e0e0ff; }  /* Column 2 */
-        div[data-testid="column"]:nth-of-type(3) { background-color: #d0ffd0; }  /* Column 3 */
-        div[data-testid="column"]:nth-of-type(4) { background-color: #ffd0d0; }  /* Column 4 */
-
-        /* Center text inside columns */
-        div[data-testid="column"] * {
-            text-align: center;
-            font-size: 40px;
-            font-weight: bold;
-        }
-    </style>
-""", unsafe_allow_html=True)
-
-# Add content inside columns
-
 
 st.markdown("""
     <h2 style="font-weight: bold; color: #4B56FF;">
@@ -153,12 +125,20 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
+st.markdown("""
+    <style>
+        .custom-label {
+            font-size: 25px !important;
+            font-weight: bold;
+            color: #4B56FF; /* Change text color if needed */
+        }
+    </style>
+""", unsafe_allow_html=True)
 
 
-# Create three columns
 col1, col2, col3, col4 = st.columns(4)
 
-# Distribute input fields across columns
+
 with col1:
      security = st.number_input("Security (%)", min_value=0, max_value=100, step=10) / 100
      comfort = st.number_input("Comfort (%)", min_value=0, max_value=100, step=10) / 100
