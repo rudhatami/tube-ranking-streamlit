@@ -129,8 +129,9 @@ if st.button("Predict"):
         favorite_line = df_final["line"][0]
 
 
-        st.write(f"It's official!
-        Your favorite line is the {favorite_line} line")
+        # st.write(f"It's official! Your favorite line is the {favorite_line} line")
+
+        st.markdown(f"It's official! \n\nYour favorite line is the **{favorite_line}** line")
 
         # st.markdown(f"""
         # WELCOME TO THE {favorite_line} LINE
