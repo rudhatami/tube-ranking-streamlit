@@ -74,21 +74,39 @@ st.markdown(
 
 st.markdown("<h3 class = 'title'> Welcome to your individualised Ranking : </h3>", unsafe_allow_html = True)
 
+
+# Create three columns
 col1, col2, col3 = st.columns(3)
 
-col1 = comfort = st.number_input("Comfort (%)", min_value=0, max_value=100, step = 10)/100
+# Distribute input fields across columns
+with col1:
+    comfort = st.number_input("Comfort (%)", min_value=0, max_value=100, step=10) / 100
+    crowding = st.number_input("Crowding (%)", min_value=0, max_value=100, step=10) / 100
+    reliability = st.number_input("Reliability (%)", min_value=0, max_value=100, step=10) / 100
 
-col1 = culture = st.number_input("Culture (%)",min_value=0, max_value=100, step = 10)/100
+with col2:
+    culture = st.number_input("Culture (%)", min_value=0, max_value=100, step=10) / 100
+    cost_living = st.number_input("Cost of Living (%)", min_value=0, max_value=100, step=10) / 100
 
-col1 = crowding = st.number_input("Crowding (%)",min_value=0, max_value=100, step = 10)/100
+with col3:
+    security = st.number_input("Security (%)", min_value=0, max_value=100, step=10) / 100
+    connectivity = st.number_input("Connectivity (%)", min_value=0, max_value=100, step=10) / 100
 
-cost_living = st.number_input("Cost of Living (%)",min_value=0, max_value=100, step = 10)/100
+# col1, col2, col3 = st.columns(3)
 
-security = st.number_input("Security (%)",min_value=0, max_value=100, step = 10)/100
+# comfort = st.number_input("Comfort (%)", min_value=0, max_value=100, step = 10)/100
 
-connectivity  = st.number_input("Connectivity (%)",min_value=0, max_value=100, step = 10)/100
+# culture = st.number_input("Culture (%)",min_value=0, max_value=100, step = 10)/100
 
-reliability = st.number_input("Reliability (%)",min_value=0, max_value=100, step = 10)/100
+# crowding = st.number_input("Crowding (%)",min_value=0, max_value=100, step = 10)/100
+
+# cost_living = st.number_input("Cost of Living (%)",min_value=0, max_value=100, step = 10)/100
+
+# security = st.number_input("Security (%)",min_value=0, max_value=100, step = 10)/100
+
+# connectivity  = st.number_input("Connectivity (%)",min_value=0, max_value=100, step = 10)/100
+
+# reliability = st.number_input("Reliability (%)",min_value=0, max_value=100, step = 10)/100
 
 
 # Button for prediction
