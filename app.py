@@ -80,15 +80,16 @@ col1, col2 = st.columns(2)
 
 # Distribute input fields across columns
 with col1:
-    comfort = st.number_input("Comfort (%)", min_value=0, max_value=100, step=10) / 100
-    crowding = st.number_input("Crowding (%)", min_value=0, max_value=100, step=10) / 100
-    reliability = st.number_input("Reliability (%)", min_value=0, max_value=100, step=10) / 100
+     security = st.number_input("Security (%)", min_value=0, max_value=100, step=10) / 100
+     crowding = st.number_input("Crowding (%)", min_value=0, max_value=100, step=10) / 100
+     reliability = st.number_input("Reliability (%)", min_value=0, max_value=100, step=10) / 100
+     connectivity = st.number_input("Connectivity (%)", min_value=0, max_value=100, step=10) / 100
 
 with col2:
-    culture = st.number_input("Culture (%)", min_value=0, max_value=100, step=10) / 100
-    cost_living = st.number_input("Cost of Living (%)", min_value=0, max_value=100, step=10) / 100
-    security = st.number_input("Security (%)", min_value=0, max_value=100, step=10) / 100
-    connectivity = st.number_input("Connectivity (%)", min_value=0, max_value=100, step=10) / 100
+     comfort = st.number_input("Comfort (%)", min_value=0, max_value=100, step=10) / 100
+     culture = st.number_input("Culture (%)", min_value=0, max_value=100, step=10) / 100
+     cost_living = st.number_input("Cost of Living (%)", min_value=0, max_value=100, step=10) / 100
+    
 
 # col1, col2, col3 = st.columns(3)
 
