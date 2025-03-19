@@ -11,7 +11,7 @@ st.markdown("""
         @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
         
         body {
-            font-family: 'Hammersmith One', sans-serif;
+            font-family: 'Ariel', sans-serif;
         }
     </style>
     """, unsafe_allow_html=True)
