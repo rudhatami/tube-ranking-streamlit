@@ -120,7 +120,6 @@ st.markdown("""
         Welcome to your individualised <strong>Ranking</strong>! 
     </h2>
     <br><br>
-    <br><br>
     <h4 style="font-size: 18px; font-weight: normal;">
         Please weigh the below <strong>factors</strong> in terms of your priorities when taking the <strong>tube</strong>:
     </h4>
