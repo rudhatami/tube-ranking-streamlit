@@ -86,7 +86,7 @@ st.image(img)
 # st.raw_data/tfl_logo.svg.png
 # Model metrics
 
-col3, col4, col5 = st.columns(3)
+# col3, col4, col5 = st.columns(3)
 
 # col3.metric("Model Accuracy", "90%")
 # col4.metric("Model Precision", "90%")
@@ -98,7 +98,7 @@ st.markdown(
     """
     <style>
     body {
-        background-color: #0025A8;  /* Light blue background */
+        background-color: #DE2110  /* Light blue background */
     }
     h1 {
         color: #DE2110;
@@ -114,6 +114,38 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+# Create columns
+col1, col2, col3, col4 = st.columns(4)
+
+# Apply custom styling
+st.markdown("""
+    <style>
+        /* Adjust column spacing */
+        div[data-testid="column"] {
+            padding: 10px;
+        }
+        
+        /* Add background color */
+        div[data-testid="column"]:nth-of-type(1) { background-color: #f0f0f0; }  /* Column 1 */
+        div[data-testid="column"]:nth-of-type(2) { background-color: #e0e0ff; }  /* Column 2 */
+        div[data-testid="column"]:nth-of-type(3) { background-color: #d0ffd0; }  /* Column 3 */
+        div[data-testid="column"]:nth-of-type(4) { background-color: #ffd0d0; }  /* Column 4 */
+
+        /* Center text inside columns */
+        div[data-testid="column"] * {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+# Add content inside columns
+col1.write("Column 1")
+col2.write("Column 2")
+col3.write("Column 3")
+col4.write("Column 4")
+
 
 st.markdown("""
     <h2 style="font-weight: bold; color: #4B56FF;">
@@ -123,6 +155,7 @@ st.markdown("""
         Please weigh the below <strong>factors</strong> in terms of your priorities when taking the <strong>tube</strong>:
     </h3>
 """, unsafe_allow_html=True)
+
 
 
 
