@@ -3,14 +3,6 @@ import numpy as np
 import pandas as pd
 from PIL import Image
 
-
-
-# Inject custom CSS to change the font to Hammersmith One
-import streamlit as st
-
-# Inject custom CSS to change the font to Hammersmith One
-import streamlit as st
-
 # Inject custom CSS to change the font to Hammersmith One
 st.markdown("""
     <style>
@@ -37,7 +29,7 @@ st.markdown("""
             color: white;  /* Text color */
             border-radius: 5px;
             padding: 10px 20px;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: bold;
             border: none;
         }
@@ -62,7 +54,7 @@ st.markdown(
     <style>
     .title {
         color: SafetyBlue;
-        font-size: 50px;
+        font-size: 100px;
         text-align: left;
         font-family: 'Hammersmith One';
         font-weight: bold;
@@ -112,7 +104,7 @@ st.markdown(
         text-align: center;
     }
     .stMetric {
-        font-size: 24px;  /* Custom font size for metrics */
+        font-size: 40px;  /* Custom font size for metrics */
     }
     .stImage {
         border-radius: 10px;  /* Rounded corners for the image */
