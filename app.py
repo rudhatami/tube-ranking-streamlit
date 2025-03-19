@@ -30,8 +30,29 @@ st.markdown("""
         .css-1y4kczv {
             font-family: 'Hammersmith One', sans-serif;
         }
+        /* Styling for the button */
+        .css-1emrehy {
+            font-family: 'Hammersmith One', sans-serif;
+            background-color: #ff5733;  /* Example color */
+            color: white;  /* Text color */
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+        }
+
+        /* Center the button with a custom div class */
+        .center-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
     </style>
     """, unsafe_allow_html=True)
+
+
 
 
 # Custom CSS for styling the title
