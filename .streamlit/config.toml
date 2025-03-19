@@ -2,5 +2,8 @@
 showErrorDetails = "none"
 
 [theme]
-base="light"
-backgroundColor="#b3b3b3"
+primaryColor="#4b56ff"
+backgroundColor="#d4d4d4"
+secondaryBackgroundColor="#d7e3f5"
+textColor="#373737"
+
