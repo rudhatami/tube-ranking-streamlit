@@ -76,7 +76,7 @@ st.markdown("<h3 class = 'title'> Welcome to your individualised Ranking : </h3>
 
 
 # Create three columns
-col1, col2, col3 = st.columns(3)
+col1, col2 = st.columns(2)
 
 # Distribute input fields across columns
 with col1:
@@ -87,8 +87,6 @@ with col1:
 with col2:
     culture = st.number_input("Culture (%)", min_value=0, max_value=100, step=10) / 100
     cost_living = st.number_input("Cost of Living (%)", min_value=0, max_value=100, step=10) / 100
-
-with col3:
     security = st.number_input("Security (%)", min_value=0, max_value=100, step=10) / 100
     connectivity = st.number_input("Connectivity (%)", min_value=0, max_value=100, step=10) / 100
 
