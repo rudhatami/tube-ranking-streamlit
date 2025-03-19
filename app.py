@@ -172,9 +172,10 @@ if st.button("Predict"):
 
         df.drop(columns = "Overall_Score", inplace = True)
 
-        df["Final_Score"] = df.Culture*culture + df.Comfort*comfort + df.Crowding_update*crowding + df.Cost_of_Living_update*cost_living + df.Security_update*security + df.Connectivity*connectivity + df.Reliability*reliability
+        df["Score"] = df.Culture*culture + df.Comfort*comfort + df.Crowding_update*crowding + df.Cost_of_Living_update*cost_living + df.Security_update*security + df.Connectivity*connectivity + df.Reliability*reliability
 
-        df_final = df[["line", "Final_Score"]].sort_values(by = "Final_Score", ascending = False).reset_index(drop = True)
+        df_final = df[["line", "Score"]].sort_values(by = "Score", ascending = False).reset_index(drop = True)
+        df_final['Line'] = df_final['line']
 
         favorite_line = df_final["line"][0]
 
