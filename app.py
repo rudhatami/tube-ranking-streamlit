@@ -5,25 +5,40 @@ from PIL import Image
 
 
 
+# Inject custom CSS to change the font to Hammersmith One
+st.markdown("""
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+        
+        body {
+            font-family: 'Hammersmith One', sans-serif;
+        }
+    </style>
+    """, unsafe_allow_html=True)
+
+# Example text to test
+st.write("This text is displayed with the Hammersmith One font!")
+
+
 # Custom CSS for styling the title
 
-st.markdown(
-    """
-    <style>
-    .title {
-        color: SafetyBlue;
-        font-size: 50px;
-        text-align: left;
-        font-family: 'Gill Sans';
-        font-weight: bold;
-        text-shadow: 1px 1px24px #000000;
-        border-bottom: 3px solid #add8e6;
-        padding-bottom: 10px;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+# st.markdown(
+#     """
+#     <style>
+#     .title {
+#         color: SafetyBlue;
+#         font-size: 50px;
+#         text-align: left;
+#         font-family: 'Gill Sans';
+#         font-weight: bold;
+#         text-shadow: 1px 1px24px #000000;
+#         border-bottom: 3px solid #add8e6;
+#         padding-bottom: 10px;
+#     }
+#     </style>
+#     """,
+#     unsafe_allow_html=True
+# )
 
 
 
