@@ -169,10 +169,9 @@ if st.button("Predict"):
         df_final = df[["line", "Score"]].sort_values(by = "Score", ascending = False).reset_index(drop = True)
         df_final['Line'] = df_final['line']
         df_final.drop(columns = "line", inplace = True)
-        df_final = df_final[["Line", "Score"]]
         df_final['Rank'] = df_final.index + 1
         df_final = df_final[["Rank", "Line", "Score"]]
-
+        st.write(df_final.style.hide(axis="index"))
         favorite_line = df_final["Line"][0]
 
 
