@@ -184,7 +184,10 @@ if st.button("Predict"):
 
         # st.write(f"It's official! Your favorite line is the {favorite_line} line")
 
-        st.markdown(f"**It's official!! /n/n Your favorite line is the {favorite_line} line!**")
+        
+       
+        st.markdown(f"**It's official!!**<br><br>**Your favorite line is the {favorite_line} line!**", unsafe_allow_html=True)
+
 
         # st.markdown(f"""
         # WELCOME TO THE {favorite_line} LINE
