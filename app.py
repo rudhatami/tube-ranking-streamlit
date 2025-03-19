@@ -120,9 +120,9 @@ if st.button("Predict"):
 
         df=pd.read_csv("raw_data/ranking.csv")
 
-        df.drop(columns = "Final_Score", inplace = True)
+        df.drop(columns = "Overall_Score", inplace = True)
 
-        df["Final_Score"] = df.Culture*culture + df.Comfort*comfort + df.Crowding*crowding + df.Cost_of_Living*cost_living + df.Security*security + df.Connectivity*connectivity + df.Reliability*reliability
+        df["Final_Score"] = df.Culture*culture + df.Comfort*comfort + df.Crowding_update*crowding + df.Cost_of_Living_update*cost_living + df.Security_update*security + df.Connectivity*connectivity + df.Reliability*reliability
 
         df_final = df[["Line", "Final_Score"]].sort_values(by = "Final_Score", ascending = False).reset_index(drop = True)
 
