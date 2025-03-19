@@ -10,7 +10,7 @@ st.markdown(
     """
     <style>
     .title {
-        color: CornflowerBlue;
+        color: SafetyBlue;
         font-size: 26px;
         text-align: left;
         font-family: 'Courier New', Courier, monospace;
