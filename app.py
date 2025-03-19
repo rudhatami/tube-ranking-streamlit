@@ -101,8 +101,8 @@ if st.button("Predict"):
 
         from PIL import Image
 
-        image = Image.open(f'raw_data/{favorite_line}.png'))
-        st.image(image, use_column_width=False)
+        # image = Image.open(f'raw_data/{favorite_line}.png'))
+        # st.image(image, use_column_width=False)
         st.write("And this is the ranking of the lines based on your preferences:")
 
         st.write(df_final)
