@@ -118,7 +118,7 @@ if st.button("Predict"):
 
         st.balloons()
 
-        df=pd.read_csv("raw_data/ranking_w.csv")
+        df=pd.read_csv("raw_data/ranking.csv")
 
         df.drop(columns = "Final_Score", inplace = True)
 
