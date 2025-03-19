@@ -131,7 +131,7 @@ if st.button("Predict"):
 
         # st.write(f"It's official! Your favorite line is the {favorite_line} line")
 
-        st.markdown(f"It's official! \n\nYour favorite line is the **{favorite_line}** line")
+        st.markdown(**f"Your favorite line is officially the {favorite_line} line"**)
 
         # st.markdown(f"""
         # WELCOME TO THE {favorite_line} LINE
@@ -139,7 +139,7 @@ if st.button("Predict"):
 
         st.image(f"raw_data/{favorite_line}.png")
         
-        st.write("And this is the ranking of the lines based on your preferences:")
+        st.write("And this is your personalised tube line ranking based on your preferences:")
         
         df_final.index = df_final.index + 1
         st.write(df_final)
