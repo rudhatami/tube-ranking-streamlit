@@ -179,12 +179,12 @@ if st.button("Predict"):
         df_final.drop(columns = "line", inplace = True)
         # df_final = df_final['Line', 'Score']
 
-        favorite_line = df_final["line"][0]
+        favorite_line = df_final["Line"][0]
 
 
         # st.write(f"It's official! Your favorite line is the {favorite_line} line")
 
-        st.markdown(f"**Your favorite line is officially the {favorite_line} line!**")
+        st.markdown(f"**It's official!! /n/n Your favorite line is the {favorite_line} line!**")
 
         # st.markdown(f"""
         # WELCOME TO THE {favorite_line} LINE
