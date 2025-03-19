@@ -13,7 +13,7 @@ st.markdown(
         color: SafetyBlue;
         font-size: 50px;
         text-align: left;
-        font-family: 'Johnston';
+        font-family: 'Gill Sans';
         font-weight: bold;
         text-shadow: 1px 1px24px #000000;
         border-bottom: 3px solid #add8e6;
