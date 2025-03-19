@@ -120,7 +120,7 @@ st.markdown("""
         Welcome to your individualised <strong>Ranking</strong>! 
     </h2>
     <h3>
-        Please weigh the below <strong>factors</strong> in terms of <strong>your priorities</strong> when taking the <strong>tube</strong>:
+        Please weigh the below <strong>factors</strong> in terms of your priorities when taking the <strong>tube</strong>:
     </h3>
 """, unsafe_allow_html=True)
 
