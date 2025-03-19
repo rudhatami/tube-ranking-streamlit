@@ -101,7 +101,7 @@ st.markdown(
         background-color: #0025A8;  /* Light blue background */
     }
     h1 {
-        color: #E1251B;
+        color: #DE2110;
         text-align: center;
     }
     .stMetric {
