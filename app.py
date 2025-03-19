@@ -74,7 +74,9 @@ st.markdown(
 
 st.markdown("<h3 class = 'title'> Welcome to your individualised Ranking : </h3>", unsafe_allow_html = True)
 
-comfort = st.number_input("Comfort (%)", min_value=0, max_value=100, step = 10)/100
+col1, col2, col3 = st.columns(3)
+
+comfort = col1.st.number_input("Comfort (%)", min_value=0, max_value=100, step = 10)/100
 
 culture = st.number_input("Culture (%)",min_value=0, max_value=100, step = 10)/100
 
