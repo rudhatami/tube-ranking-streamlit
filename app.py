@@ -275,7 +275,7 @@ if st.button("Predict"):
         
 
         st.markdown(f"""
-        <p style="font-size: 22px; font-weight: normal; text-align: left; margin-top: 5px;">
+        <p style="font-size: 18px; font-weight: normal; text-align: left; margin-top: 5px;">
         <br><br><br><br>And this is the ranking based on your personal preference:
         </p>
         """, unsafe_allow_html=True)
@@ -290,20 +290,20 @@ if st.button("Predict"):
                 font-weight: bold;
             }
             
-            .dataframe-container {
-                border: 2px solid blue;
-                padding: 10px;
-                border-radius: 10px;
-            }
+            # .dataframe-container {
+            #     border: 2px solid blue;
+            #     padding: 10px;
+            #     border-radius: 10px;
+            # }
         
             .dataframe-container th {
-                font-size: 22px;
+                font-size: 30px;
                 font-weight: bold;
                 color: black;
             }
         
             .dataframe-container td {
-                font-size: 25px;
+                font-size: 30px;
             }
         
             .dataframe-container td, .dataframe-container th {
