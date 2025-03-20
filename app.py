@@ -293,17 +293,17 @@ if st.button("Predict"):
             .dataframe-container {
                 border: 2px solid blue;
                 padding: 10px;
-                border-radius: 5px;
+                border-radius: 10px;
             }
         
             .dataframe-container th {
-                font-size: 16px;
+                font-size: 22px;
                 font-weight: bold;
                 color: black;
             }
         
             .dataframe-container td {
-                font-size: 14px;
+                font-size: 25px;
             }
         
             .dataframe-container td, .dataframe-container th {
@@ -313,14 +313,14 @@ if st.button("Predict"):
         
             /* Making columns smaller */
             .dataframe-container table {
-                width: 60%;
+                width: 40%;
             }
             </style>
         """, unsafe_allow_html=True)
         
         # Display the dataframe
         st.markdown('<div class="dataframe-container">', unsafe_allow_html=True)
-        st.dataframe(df_final, width=500)
+        st.dataframe(df_final, width=200)
         st.markdown('</div>', unsafe_allow_html=True)
 
 # Store the top-ranked line
