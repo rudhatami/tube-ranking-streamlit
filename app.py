@@ -383,11 +383,17 @@ else:
 
 st.markdown("""
     Explanation to the metrics:<br><br>
-    **Security**: This metric assesses the security level for each line based on the number of accidents and crimes per borough.<br><br>
-    **Crowding**: This metric assesses the busyness of the line. <br><br>
-    **Reliability**: This metric assesses the reliability based on delays, lost customer hours....<br><br>
-    **Connectivity**: This takes the connectedness into account based on transfer options to different underground lines and other public transport options.
+    **Security**: This metric evaluates the safety of each line, considering the frequency of accidents and crimes across different boroughs.<br><br>
+    **Crowding**: This metric gauges how busy each line is, assessing passenger density during peak hours. <br><br>
+    **Reliability**: Measures the dependability of each line, based on factors like delays, lost customer hours, journey access time, percentage of services operated, and the proportion of kilometers covered.<br><br>
+    **Connectivity**: Evaluates how well each line connects with other transport options, including transfers to underground lines, other public transport, the Night Tube, access lengths, average speeds, and the number of boroughs served.<br><br>
+    **Comfort**: Assesses the overall comfort level of a line, including noise levels, air quality, temperature, depth of the line (underground), internet connection, and cleanliness.<br><br>
+    **Cost of Living**: This metric reflects the affordability of the boroughs served by each line, based on average rent, housing prices, and the cost of living, including pint prices.<br><br>
+    **Culture**: Measures the cultural richness of the boroughs served by each line, based on the number of cultural sites, box office revenues, and the number of movies filmed in those areas.<br><br><br><br>
+
 """, unsafe_allow_html=True)
+
+
 
 #      security = st.number_input("Security (%)", min_value=0, max_value=100, step=10) / 100
 #      comfort = st.number_input("Comfort (%)", min_value=0, max_value=100, step=10) / 100
