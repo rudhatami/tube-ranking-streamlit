@@ -218,7 +218,7 @@ if st.button("Predict"):
     else:
             st.markdown("""
             <p style="color: red; text-align: center; font-size: px;">
-            The sum of the total should be 100!
+            The sum of your total should be 100!
             </p>
             """, unsafe_allow_html=True)
 
