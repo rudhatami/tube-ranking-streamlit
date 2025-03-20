@@ -2,11 +2,10 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 from PIL import Image
+import seaborn as sns  
 
-import seaborn as sns  # Import seaborn at the top of your script
 
 
-# Inject custom CSS to change the font to Hammersmith One
 st.markdown("""
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
@@ -50,8 +49,6 @@ st.markdown("""
 
 
 
-# Custom CSS for styling the title
-
 st.markdown(
     """
     <style>
@@ -72,28 +69,8 @@ st.markdown(
 )
 
 
-
-#import cairosvg
-#cairosvg.svg2png(url="raw_data/tfl_logo.svg", write_to="raw_data/tfl_logo.png")
-
-#from PIL import Image
-#import streamlit as st
-
 img = Image.open("raw_data/tfl_logo.svg.png")
 st.image(img)
-
-
-
-
-
-# st.raw_data/tfl_logo.svg.png
-# Model metrics
-
-# col3, col4, col5 = st.columns(3)
-
-# col3.metric("Model Accuracy", "90%")
-# col4.metric("Model Precision", "90%")
-# col5.metric("Model Recall", "87%")
 
 
 # Custom CSS for styling
@@ -170,25 +147,6 @@ with col7:
     cost_living = st.number_input("Cost of Living (%)", min_value=0, max_value=100, step=10) / 100
 
 
-
-
-
-# col1, col2, col3 = st.columns(3)
-
-# comfort = st.number_input("Comfort (%)", min_value=0, max_value=100, step = 10)/100
-
-# culture = st.number_input("Culture (%)",min_value=0, max_value=100, step = 10)/100
-
-# crowding = st.number_input("Crowding (%)",min_value=0, max_value=100, step = 10)/100
-
-# cost_living = st.number_input("Cost of Living (%)",min_value=0, max_value=100, step = 10)/100
-
-# security = st.number_input("Security (%)",min_value=0, max_value=100, step = 10)/100
-
-# connectivity  = st.number_input("Connectivity (%)",min_value=0, max_value=100, step = 10)/100
-
-# reliability = st.number_input("Reliability (%)",min_value=0, max_value=100, step = 10)/100
-
 total = int(round((comfort + culture + crowding + cost_living + security + connectivity + reliability) * 100))
 st.write(f'Sum of your total: {total}/100')
 
@@ -215,40 +173,7 @@ if st.button("Predict"):
         df_final.set_index("Rank", inplace=True)
         favorite_line = df_final["Line"].iloc[0]
        
-        
-        # df_final.drop(columns = "line", inplace = True)
-        # df_final['Rank'] = df_final.index + 1
-        # df_final = df_final[["Rank", "Line", "Score"]]
-        # st.write(df_final.style.hide(axis="index"))
-         # favorite_line = df_final["Line"][0]
-        
-
-
-        # st.write(f"It's official! Your favorite line is the {favorite_line} line")
-
-        
-#         st.markdown("""
-#         <br><br>
-#         <p style="
-#         text-align: center; 
-#         font-size: 50px; 
-#         font-weight: bold; 
-#         background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); 
-#         -webkit-background-clip: text; 
-#         color: transparent;">
-#         It's official!!
-#         </p>
-#         <br><br>
-#         <h2 style="text-align: center;">
-#         </h2>
-#         <br><br><br><br>
-#         """, unsafe_allow_html=True)
-#         st.markdown(f"""
-#     <p style="font-size: 20px; font-weight: normal; text-align: left;">
-#         Your favorite line is the {favorite_line} line!
-#     </p>
-#     <br><br><br><br>
-# """, unsafe_allow_html=True)
+    
 
         st.markdown("""
     <p style="
@@ -270,12 +195,6 @@ if st.button("Predict"):
         """, unsafe_allow_html=True)
 
 
-
-
-        # st.markdown(f"""
-        # WELCOME TO THE {favorite_line} LINE
-        # """)
-
         st.image(f"raw_data/{favorite_line}.png")
         
         
@@ -285,6 +204,77 @@ if st.button("Predict"):
         <br><br><br><br>And this is the ranking based on your personal preference:
         </p>
         """, unsafe_allow_html=True)
+        
+        col1, col2, col3 = st.columns([1, 2, 1]) 
+        with col2:
+            st.write(df_final)
+        
+
+        st.balloons()
+
+
+else:
+        st.markdown("""
+        <p style="color: red; font-size: 20px;">
+        The sum of the values should be 100
+        </p>
+        """, unsafe_allow_html=True)
+
+
+st.markdown("""
+    <p style="font-size: 18px; font-weight: bold;">
+    <br><br><br><br><br><br>Explanation of the metrics:
+    </p>
+    <p style="font-size: 14px;">
+    <u><strong>Security</strong></u>: This metric evaluates the safety of each line, considering the frequency of accidents and crimes across different boroughs.<br><br>
+    <u><strong>Crowding</strong></u>: This metric gauges how busy each line is, assessing passenger density during peak hours. <br><br>
+    <u><strong>Reliability</strong></u>: Measures the dependability of each line, based on factors like delays, lost customer hours, journey access time, percentage of services operated, and the proportion of kilometers covered.<br><br>
+    <u><strong>Connectivity</strong></u>: Evaluates how well each line connects with other transport options, including transfers to underground lines, other public transport, the Night Tube, access lengths, average speeds, and the number of boroughs served.<br><br>
+    <u><strong>Comfort</strong></u>: Assesses the overall comfort level of a line, including noise levels, air quality, temperature, depth of the line (underground), internet connection, and cleanliness.<br><br>
+    <u><strong>Cost of Living</strong></u>: This metric reflects the affordability of the boroughs served by each line, based on average rent, housing prices, and the cost of living, including pint prices.<br><br>
+    <u><strong>Culture</strong></u>: Measures the cultural richness of the boroughs served by each line, based on the number of cultural sites, box office revenues, and the number of movies filmed in those areas.<br><br><br><br>
+    <span style="font-size: 12px; font-weight: bold;"><br><br><br><br><br><br><br><br>
+    ***DISCLAIMER: This ranking is for educational purposes only. This app was developed for the TUBE project of Data Analytics batch #1922. Team members: Josua Kaufmann, Laura Disney, Xin Yang and Roudabeh Hatami.***
+    </span>
+    <br><br><br><br>
+""", unsafe_allow_html=True)
+
+
+
+
+
+#import cairosvg
+#cairosvg.svg2png(url="raw_data/tfl_logo.svg", write_to="raw_data/tfl_logo.png")
+
+#from PIL import Image
+#import streamlit as st
+
+#      security = st.number_input("Security (%)", min_value=0, max_value=100, step=10) / 100
+#      comfort = st.number_input("Comfort (%)", min_value=0, max_value=100, step=10) / 100
+    
+# with col2:
+#      crowding = st.number_input("Crowding (%)", min_value=0, max_value=100, step=10) / 100
+#      culture = st.number_input("Culture (%)", min_value=0, max_value=100, step=10) / 100
+# with col3:
+#     reliability = st.number_input("Reliability (%)", min_value=0, max_value=100, step=10) / 100
+#     cost_living = st.number_input("Cost of Living (%)", min_value=0, max_value=100, step=10) / 100
+# with col4:
+#     connectivity = st.number_input("Connectivity (%)", min_value=0, max_value=100, step=10) / 100
+    
+#     total = comfort + culture + crowding + cost_living + security + connectivity + reliability
+#     st.write(f'This is the sum of your total: {total}')
+
+
+# col5, col6, col7 = st.columns(3)
+
+# with col5:
+#      comfort = st.number_input("Comfort (%)", min_value=0, max_value=100, step=10) / 100
+    
+# with col6:
+#      culture = st.number_input("Culture (%)", min_value=0, max_value=100, step=10) / 100
+# with col7:
+#     cost_living = st.number_input("Cost of Living (%)", min_value=0, max_value=100, step=10) / 100
+
 
         
         # st.write(df_final)
@@ -420,14 +410,22 @@ if st.button("Predict"):
 #                  'props': [('background-color', '#FFEB3B')]}  # Highlight the first row in yellow
 #             ]
 #         ).hide(axis="index")  # Hide the index column
-        
-#         # Display the styled dataframe
-        col1, col2, col3 = st.columns([1, 2, 1])  # Columns to center it
-        with col2:
-            st.write(df_final)
 
+# col1, col2, col3 = st.columns(3)
 
+# comfort = st.number_input("Comfort (%)", min_value=0, max_value=100, step = 10)/100
 
+# culture = st.number_input("Culture (%)",min_value=0, max_value=100, step = 10)/100
+
+# crowding = st.number_input("Crowding (%)",min_value=0, max_value=100, step = 10)/100
+
+# cost_living = st.number_input("Cost of Living (%)",min_value=0, max_value=100, step = 10)/100
+
+# security = st.number_input("Security (%)",min_value=0, max_value=100, step = 10)/100
+
+# connectivity  = st.number_input("Connectivity (%)",min_value=0, max_value=100, step = 10)/100
+
+# reliability = st.number_input("Reliability (%)",min_value=0, max_value=100, step = 10)/100
 
     #     st.markdown("""
     #     <style>
@@ -467,18 +465,6 @@ if st.button("Predict"):
     #     st.markdown('</table>', unsafe_allow_html=True)
 
 # Store the top-ranked line
-        
-
-        st.balloons()
-
-
-else:
-        st.markdown("""
-        <p style="color: red; font-size: 20px;">
-        The sum of the values should be 100
-        </p>
-        """, unsafe_allow_html=True)
-
         # st.write("The sum of the values should be 100")
         # st.markdown('</div>', unsafe_allow_html=True)
 
@@ -508,50 +494,36 @@ else:
 #     <u><strong>***DISCLAIMER</strong></u>: This ranking is for educational purposes only. This app was developed for the TUBE project of Data Analytics batch#1922. Team members: Josua Kaufmann, Laura Disney, Xin Ynag and Roudabeh Hatami.*** <br><br><br><br>
 #     </p>
 # """, unsafe_allow_html=True)
-st.markdown("""
-    <p style="font-size: 18px; font-weight: bold;">
-    <br><br><br><br><br><br>Explanation of the metrics:
-    </p>
-    <p style="font-size: 14px;">
-    <u><strong>Security</strong></u>: This metric evaluates the safety of each line, considering the frequency of accidents and crimes across different boroughs.<br><br>
-    <u><strong>Crowding</strong></u>: This metric gauges how busy each line is, assessing passenger density during peak hours. <br><br>
-    <u><strong>Reliability</strong></u>: Measures the dependability of each line, based on factors like delays, lost customer hours, journey access time, percentage of services operated, and the proportion of kilometers covered.<br><br>
-    <u><strong>Connectivity</strong></u>: Evaluates how well each line connects with other transport options, including transfers to underground lines, other public transport, the Night Tube, access lengths, average speeds, and the number of boroughs served.<br><br>
-    <u><strong>Comfort</strong></u>: Assesses the overall comfort level of a line, including noise levels, air quality, temperature, depth of the line (underground), internet connection, and cleanliness.<br><br>
-    <u><strong>Cost of Living</strong></u>: This metric reflects the affordability of the boroughs served by each line, based on average rent, housing prices, and the cost of living, including pint prices.<br><br>
-    <u><strong>Culture</strong></u>: Measures the cultural richness of the boroughs served by each line, based on the number of cultural sites, box office revenues, and the number of movies filmed in those areas.<br><br><br><br>
-    <span style="font-size: 12px; font-weight: bold;"><br><br><br><br><br><br><br><br>
-    ***DISCLAIMER: This ranking is for educational purposes only. This app was developed for the TUBE project of Data Analytics batch #1922. Team members: Josua Kaufmann, Laura Disney, Xin Yang and Roudabeh Hatami.***
-    </span>
-    <br><br><br><br>
-""", unsafe_allow_html=True)
 
+        # st.write(f"It's official! Your favorite line is the {favorite_line} line")
 
+        
+#         st.markdown("""
+#         <br><br>
+#         <p style="
+#         text-align: center; 
+#         font-size: 50px; 
+#         font-weight: bold; 
+#         background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); 
+#         -webkit-background-clip: text; 
+#         color: transparent;">
+#         It's official!!
+#         </p>
+#         <br><br>
+#         <h2 style="text-align: center;">
+#         </h2>
+#         <br><br><br><br>
+#         """, unsafe_allow_html=True)
+#         st.markdown(f"""
+#     <p style="font-size: 20px; font-weight: normal; text-align: left;">
+#         Your favorite line is the {favorite_line} line!
+#     </p>
+#     <br><br><br><br>
+# """, unsafe_allow_html=True)
 
-
-
-#      security = st.number_input("Security (%)", min_value=0, max_value=100, step=10) / 100
-#      comfort = st.number_input("Comfort (%)", min_value=0, max_value=100, step=10) / 100
-    
-# with col2:
-#      crowding = st.number_input("Crowding (%)", min_value=0, max_value=100, step=10) / 100
-#      culture = st.number_input("Culture (%)", min_value=0, max_value=100, step=10) / 100
-# with col3:
-#     reliability = st.number_input("Reliability (%)", min_value=0, max_value=100, step=10) / 100
-#     cost_living = st.number_input("Cost of Living (%)", min_value=0, max_value=100, step=10) / 100
-# with col4:
-#     connectivity = st.number_input("Connectivity (%)", min_value=0, max_value=100, step=10) / 100
-    
-#     total = comfort + culture + crowding + cost_living + security + connectivity + reliability
-#     st.write(f'This is the sum of your total: {total}')
-
-
-# col5, col6, col7 = st.columns(3)
-
-# with col5:
-#      comfort = st.number_input("Comfort (%)", min_value=0, max_value=100, step=10) / 100
-    
-# with col6:
-#      culture = st.number_input("Culture (%)", min_value=0, max_value=100, step=10) / 100
-# with col7:
-#     cost_living = st.number_input("Cost of Living (%)", min_value=0, max_value=100, step=10) / 100
+        # df_final.drop(columns = "line", inplace = True)
+        # df_final['Rank'] = df_final.index + 1
+        # df_final = df_final[["Rank", "Line", "Score"]]
+        # st.write(df_final.style.hide(axis="index"))
+         # favorite_line = df_final["Line"][0]
+        
