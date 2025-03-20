@@ -253,11 +253,12 @@ st.markdown("""
     
     <br><br><br><br><br><br><br><br>
     <div style="text-align: center;">
-        <span style="font-size: 12px; font-weight: bold;">
+        <span style="font-size: 16px; font-weight: bold;">
         ***DISCLAIMER: This ranking is for educational purposes only.*** 
     <br><br>
     <span style="font-size: 12px; font-weight: normal;">
-        This app was developed for the TUBE project of Data Analytics batch #1922. Team members: Josua Kaufmann, Laura Disney, Xin Yang, and Roudabeh Hatami.***
+        This app was developed for the TUBE project of Data Analytics batch #1922. 
+        <br><br>Team members: Josua Kaufmann, Laura Disney, Xin Yang, and Roudabeh Hatami.***
         </span>
     </div>
     <br><br><br><br>
