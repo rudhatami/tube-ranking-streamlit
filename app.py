@@ -222,7 +222,8 @@ if st.button("Predict"):
 
 st.markdown("""
     <p style="font-size: 18px; font-weight: bold;">
-    <br><br><br><br><br><br>Explanation of the metrics:
+    <br><br><br><br><br><br>
+    <u><strong>Explanation of the metrics:</strong></u>
     </p>
     <p style="font-size: 14px;">
     <u><strong>Security</strong></u>: This metric evaluates the safety of each line, considering the frequency of accidents and crimes across different boroughs.<br><br>
