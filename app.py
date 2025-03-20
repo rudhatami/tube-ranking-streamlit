@@ -130,7 +130,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown("""
-    <h5 style="font-size: 10px; font-weight: normal;">
+    <h5 style="font-size: 12px; font-weight: normal;">
         *Scroll down for a breakdown of the metrics.
     </h5>
 """, unsafe_allow_html=True)
