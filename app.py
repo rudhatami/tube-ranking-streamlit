@@ -234,7 +234,6 @@ if st.button("Predict"):
         </p>
         <br><br>
         <h2 style="text-align: center;">
-        <strong>Your favorite line is the {favorite_line} line!</strong>
         </h2>
         <br><br><br><br>
         """, unsafe_allow_html=True)
@@ -242,7 +241,7 @@ if st.button("Predict"):
 
 
 
-        # st.markdown(f"<br><br>**It's official!!**<br><br>**Your favorite line is the {favorite_line} line!**<br><br><br><br>", unsafe_allow_html=True)
+        st.markdown(f"**Your favorite line is the {favorite_line} line!**<br><br><br><br>", unsafe_allow_html=True)
 
 
         # st.markdown(f"""
