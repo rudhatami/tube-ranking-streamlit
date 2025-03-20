@@ -502,6 +502,7 @@ st.markdown("""
     <u><strong>Comfort</strong></u>: Assesses the overall comfort level of a line, including noise levels, air quality, temperature, depth of the line (underground), internet connection, and cleanliness.<br><br>
     <u><strong>Cost of Living</strong></u>: This metric reflects the affordability of the boroughs served by each line, based on average rent, housing prices, and the cost of living, including pint prices.<br><br>
     <u><strong>Culture</strong></u>: Measures the cultural richness of the boroughs served by each line, based on the number of cultural sites, box office revenues, and the number of movies filmed in those areas.<br><br><br><br>
+    <u><strong>***DISCLAIMER</strong></u>: This ranking is for educational purposes only. This app was developed for the TUBE project of Data Analytics batch#1922. Team members: Josua Kaufmann, Laura Disney, Xin Ynag and Roudabeh Hatami.*** <br><br><br><br>
     </p>
 """, unsafe_allow_html=True)
 
