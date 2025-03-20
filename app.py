@@ -275,7 +275,7 @@ if st.button("Predict"):
         
 
         st.markdown(f"""
-        <p style="font-size: 18px; font-weight: normal; text-align: left; margin-top: 5px;">
+        <p style="font-size: 16px; font-weight: normal; text-align: left; margin-top: 5px;">
         <br><br><br><br>And this is the ranking based on your personal preference:
         </p>
         """, unsafe_allow_html=True)
@@ -383,15 +383,16 @@ if st.button("Predict"):
         # # Close the container div
         # st.markdown('</div>', unsafe_allow_html=True)
 
-
+        
 
         col1, col2, col3 = st.columns(spec = [1, 2, 1])
         
         
         with col2:
+             
+             cm = sns.color_palette("coolwarm_r", as_cmap=True)
+             df_final = df_final.style.background_gradient(cmap=cm)
              st.write(df_final)
-
-
     #     st.markdown("""
     #     <style>
     #     .styled-table {
