@@ -213,12 +213,12 @@ if st.button("Predict"):
         st.balloons()
 
 
-else:
-        st.markdown("""
-        <p style="color: red; font-size: 20px;">
-        The sum of the values should be 100
-        </p>
-        """, unsafe_allow_html=True)
+    else:
+            st.markdown("""
+            <p style="color: red; font-size: 20px;">
+            The sum of the total should be 100
+            </p>
+            """, unsafe_allow_html=True)
 
 
 st.markdown("""
