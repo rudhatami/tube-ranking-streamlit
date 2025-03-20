@@ -281,7 +281,47 @@ if st.button("Predict"):
         """, unsafe_allow_html=True)
 
         
-        st.write(df_final)
+        # st.write(df_final)
+        
+# Custom CSS for dataframe styling
+st.markdown("""
+    <style>
+    .streamlit-expanderHeader {
+        font-weight: bold;
+    }
+    
+    .dataframe-container {
+        border: 2px solid blue;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .dataframe-container th {
+        font-size: 16px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .dataframe-container td {
+        font-size: 14px;
+    }
+
+    .dataframe-container td, .dataframe-container th {
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Making columns smaller */
+    .dataframe-container table {
+        width: 60%;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# Display the dataframe
+st.markdown('<div class="dataframe-container">', unsafe_allow_html=True)
+st.dataframe(df_final, width=500)
+st.markdown('</div>', unsafe_allow_html=True)
 
 # Store the top-ranked line
         
