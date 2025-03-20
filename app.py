@@ -381,16 +381,28 @@ else:
         # st.write("The sum of the values should be 100")
         # st.markdown('</div>', unsafe_allow_html=True)
 
-st.markdown("""
-    Explanation to the metrics:<br><br>
-    **Security**: This metric evaluates the safety of each line, considering the frequency of accidents and crimes across different boroughs.<br><br>
-    **Crowding**: This metric gauges how busy each line is, assessing passenger density during peak hours. <br><br>
-    **Reliability**: Measures the dependability of each line, based on factors like delays, lost customer hours, journey access time, percentage of services operated, and the proportion of kilometers covered.<br><br>
-    **Connectivity**: Evaluates how well each line connects with other transport options, including transfers to underground lines, other public transport, the Night Tube, access lengths, average speeds, and the number of boroughs served.<br><br>
-    **Comfort**: Assesses the overall comfort level of a line, including noise levels, air quality, temperature, depth of the line (underground), internet connection, and cleanliness.<br><br>
-    **Cost of Living**: This metric reflects the affordability of the boroughs served by each line, based on average rent, housing prices, and the cost of living, including pint prices.<br><br>
-    **Culture**: Measures the cultural richness of the boroughs served by each line, based on the number of cultural sites, box office revenues, and the number of movies filmed in those areas.<br><br><br><br>
+# st.markdown("""
+#     Explanation to the metrics:<br><br>
+#     **Security**: This metric evaluates the safety of each line, considering the frequency of accidents and crimes across different boroughs.<br><br>
+#     **Crowding**: This metric gauges how busy each line is, assessing passenger density during peak hours. <br><br>
+#     **Reliability**: Measures the dependability of each line, based on factors like delays, lost customer hours, journey access time, percentage of services operated, and the proportion of kilometers covered.<br><br>
+#     **Connectivity**: Evaluates how well each line connects with other transport options, including transfers to underground lines, other public transport, the Night Tube, access lengths, average speeds, and the number of boroughs served.<br><br>
+#     **Comfort**: Assesses the overall comfort level of a line, including noise levels, air quality, temperature, depth of the line (underground), internet connection, and cleanliness.<br><br>
+#     **Cost of Living**: This metric reflects the affordability of the boroughs served by each line, based on average rent, housing prices, and the cost of living, including pint prices.<br><br>
+#     **Culture**: Measures the cultural richness of the boroughs served by each line, based on the number of cultural sites, box office revenues, and the number of movies filmed in those areas.<br><br><br><br>
 
+# """, unsafe_allow_html=True)
+st.markdown("""
+    <p style="font-size: 14px;">
+    Explanation of the metrics:<br><br>
+    <strong>Security</strong>: This metric evaluates the safety of each line, considering the frequency of accidents and crimes across different boroughs.<br><br>
+    <strong>Crowding</strong>: This metric gauges how busy each line is, assessing passenger density during peak hours. <br><br>
+    <strong>Reliability</strong>: Measures the dependability of each line, based on factors like delays, lost customer hours, journey access time, percentage of services operated, and the proportion of kilometers covered.<br><br>
+    <strong>Connectivity</strong>: Evaluates how well each line connects with other transport options, including transfers to underground lines, other public transport, the Night Tube, access lengths, average speeds, and the number of boroughs served.<br><br>
+    <strong>Comfort</strong>: Assesses the overall comfort level of a line, including noise levels, air quality, temperature, depth of the line (underground), internet connection, and cleanliness.<br><br>
+    <strong>Cost of Living</strong>: This metric reflects the affordability of the boroughs served by each line, based on average rent, housing prices, and the cost of living, including pint prices.<br><br>
+    <strong>Culture</strong>: Measures the cultural richness of the boroughs served by each line, based on the number of cultural sites, box office revenues, and the number of movies filmed in those areas.<br><br><br><br>
+    </p>
 """, unsafe_allow_html=True)
 
 
