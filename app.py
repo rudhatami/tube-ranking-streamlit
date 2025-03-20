@@ -184,7 +184,8 @@ with col7:
 # reliability = st.number_input("Reliability (%)",min_value=0, max_value=100, step = 10)/100
 
 total = int(round((comfort + culture + crowding + cost_living + security + connectivity + reliability) * 100))
-st.write(f'The sum of your total should be 100: {total}')
+st.write(f'The sum of your total should be 100/ {total}')
+
 
 # Button for prediction
 st.markdown('<div class="center-button">', unsafe_allow_html=True)
@@ -220,8 +221,19 @@ if st.button("Predict"):
         # st.write(f"It's official! Your favorite line is the {favorite_line} line")
 
         
-       
-        st.markdown(f"<br><br>**It's official!!**<br><br>**Your favorite line is the {favorite_line} line!**<br><br><br><br>", unsafe_allow_html=True)
+        st.markdown(f"""
+    <br><br>
+    <h2 style="text-align: center;">
+        :rainbow[It's official!!]
+    </h2>
+    <br><br>
+    <h2 style="text-align: center;">
+        **Your favorite line is the {favorite_line} line!**
+    </h2>
+    <br><br><br><br>
+""", unsafe_allow_html=True)
+
+        # st.markdown(f"<br><br>**It's official!!**<br><br>**Your favorite line is the {favorite_line} line!**<br><br><br><br>", unsafe_allow_html=True)
 
 
         # st.markdown(f"""
