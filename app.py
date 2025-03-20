@@ -376,7 +376,7 @@ else:
         st.write("The sum of the values should be 100")
         st.markdown('</div>', unsafe_allow_html=True)
 
-
+st.write("Explanation to the metrics:<br><br> Security: This metric assesses the security level for each line based on the number of accidents and crimes per borough.<br><br>Crowding: This metric assesses the business of the line. <br><br> Reliability: This metric assesses the reliability based on delays, lost customer hours....<br><br>Connectivity: This takes the connectedness into account based on transfer options to different underground lines and other public transport options.") 
 # with col1:
 #      security = st.number_input("Security (%)", min_value=0, max_value=100, step=10) / 100
 #      comfort = st.number_input("Comfort (%)", min_value=0, max_value=100, step=10) / 100
