@@ -401,8 +401,8 @@ if st.button("Predict"):
 
 # Example DataFrame (replace with your own df_final)
         df_final = pd.DataFrame({
-            'Line': ['Line 1', 'Line 2', 'Line 3'],
-            'Score': [80, 90, 85]
+            'Line': df_final["Line],
+            'Score': df_final["Score"]
         })
         
         # Style the dataframe
