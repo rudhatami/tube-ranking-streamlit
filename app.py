@@ -258,7 +258,7 @@ st.markdown("""
     <br><br>
     <span style="font-size: 12px; font-weight: normal;">
         This app was developed for the TUBE project of Data Analytics batch #1922. 
-        Team members: Josua Kaufmann, Laura Disney, Xin Yang, and Roudabeh Hatami.***
+        <br>Team members: Josua Kaufmann, Laura Disney, Xin Yang, and Roudabeh Hatami.***
         </span>
     </div>
     <br><br><br><br>
