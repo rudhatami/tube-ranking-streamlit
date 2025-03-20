@@ -221,28 +221,48 @@ if st.button("Predict"):
         # st.write(f"It's official! Your favorite line is the {favorite_line} line")
 
         
+#         st.markdown("""
+#         <br><br>
+#         <p style="
+#         text-align: center; 
+#         font-size: 50px; 
+#         font-weight: bold; 
+#         background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); 
+#         -webkit-background-clip: text; 
+#         color: transparent;">
+#         It's official!!
+#         </p>
+#         <br><br>
+#         <h2 style="text-align: center;">
+#         </h2>
+#         <br><br><br><br>
+#         """, unsafe_allow_html=True)
+#         st.markdown(f"""
+#     <p style="font-size: 20px; font-weight: normal; text-align: left;">
+#         Your favorite line is the {favorite_line} line!
+#     </p>
+#     <br><br><br><br>
+# """, unsafe_allow_html=True)
+
         st.markdown("""
-        <br><br>
-        <p style="
+    <p style="
         text-align: center; 
         font-size: 50px; 
         font-weight: bold; 
         background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); 
         -webkit-background-clip: text; 
-        color: transparent;">
+        color: transparent;
+        margin-bottom: 10px;">
         It's official!!
-        </p>
-        <br><br>
-        <h2 style="text-align: center;">
-        </h2>
-        <br><br><br><br>
-        """, unsafe_allow_html=True)
-        st.markdown(f"""
-    <p style="font-size: 20px; font-weight: normal; text-align: left;">
+    </p>
+""", unsafe_allow_html=True)
+
+st.markdown(f"""
+    <p style="font-size: 24px; font-weight: bold; text-align: center; margin-top: 5px;">
         Your favorite line is the {favorite_line} line!
     </p>
-    <br><br><br><br>
 """, unsafe_allow_html=True)
+
 
 
 
