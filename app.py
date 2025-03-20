@@ -372,9 +372,14 @@ if st.button("Predict"):
 
 
 else:
+        st.markdown("""
+        <p style="color: red; font-size: 20px;">
+        The sum of the values should be 100
+        </p>
+        """, unsafe_allow_html=True)
 
-        st.write("The sum of the values should be 100")
-        st.markdown('</div>', unsafe_allow_html=True)
+        # st.write("The sum of the values should be 100")
+        # st.markdown('</div>', unsafe_allow_html=True)
 
 st.markdown("""
     Explanation to the metrics:<br><br>
