@@ -385,7 +385,11 @@ if st.button("Predict"):
 
 
 
+col1, col2, col3 = st.columns(3)
 
+
+with col2:
+     st.write(df_final)
 
 
     #     st.markdown("""
