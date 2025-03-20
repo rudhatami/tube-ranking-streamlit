@@ -200,7 +200,7 @@ if st.button("Predict"):
         
 
         st.markdown(f"""
-        <p style="font-size: 16px; font-weight: normal; text-align: left; margin-top: 5px;">
+        <p style="font-size: 24px; font-weight: normal; text-align: center; margin-top: 5px;">
         <br><br><br><br>And this is the ranking based on your personal preference:
         </p>
         """, unsafe_allow_html=True)
