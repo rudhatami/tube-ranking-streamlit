@@ -2,6 +2,9 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 from PIL import Image
+pip install seaborn
+import seaborn as sns  # Import seaborn at the top of your script
+
 
 # Inject custom CSS to change the font to Hammersmith One
 st.markdown("""
@@ -386,12 +389,12 @@ if st.button("Predict"):
         
 
         col1, col2, col3 = st.columns(spec = [1, 2, 1])
-    
 
-        with col2:
-            cm = sns.color_palette("coolwarm_r", as_cmap=True)
-            df_final = df_final.style.background_gradient(cmap=cm)
-            st.dataframe(df_final)  # Use st.dataframe for displaying the styled dataframe
+            with col2:
+                cm = sns.color_palette("coolwarm_r", as_cmap=True)  # Generate the color map
+                df_final = df_final.style.background_gradient(cmap=cm)  # Apply the gradient style
+                st.dataframe(df_final)  # Display the styled dataframe
+
 
     #     st.markdown("""
     #     <style>
