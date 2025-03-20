@@ -272,7 +272,25 @@ if st.button("Predict"):
 
         st.image(f"raw_data/{favorite_line}.png")
         
-        st.write("And this is your personalised tube line ranking based on your preferences:")
+        st.markdown("""
+        <p style="
+        text-align: left; 
+        font-size: 22px; 
+        font-weight: bold; 
+        background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); 
+        -webkit-background-clip: text; 
+        color: transparent;
+        margin-bottom: 10px;">
+        It's official!!
+        </p>
+        """, unsafe_allow_html=True)
+
+        st.markdown(f"""
+        <p style="font-size: 20px; font-weight: normal; text-align: left; margin-top: 5px;">
+        f"Your favorite line is the {favorite_line} line!"
+        </p>
+        """, unsafe_allow_html=True)
+
         
         st.write(df_final)
 
