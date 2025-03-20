@@ -284,44 +284,80 @@ if st.button("Predict"):
         # st.write(df_final)
         
 # Custom CSS for dataframe styling
-        st.markdown("""
-            <style>
-            .streamlit-expanderHeader {
-                font-weight: bold;
-            }
+        # st.markdown("""
+        #     <style>
+        #     .streamlit-expanderHeader {
+        #         font-weight: bold;
+        #     }
             
-            .dataframe-container {
-                border: 2px solid blue;
-                padding: 10px;
-                border-radius: 10px;
-            }
+        #     .dataframe-container {
+        #         border: 2px solid blue;
+        #         padding: 10px;
+        #         border-radius: 10px;
+        #     }
         
-            .dataframe-container th {
-                font-size: 22px;
-                font-weight: bold;
-                color: black;
-            }
+        #     .dataframe-container th {
+        #         font-size: 22px;
+        #         font-weight: bold;
+        #         color: black;
+        #     }
         
-            .dataframe-container td {
-                font-size: 25px;
-            }
+        #     .dataframe-container td {
+        #         font-size: 25px;
+        #     }
         
-            .dataframe-container td, .dataframe-container th {
-                padding: 10px;
-                text-align: center;
-            }
+        #     .dataframe-container td, .dataframe-container th {
+        #         padding: 10px;
+        #         text-align: center;
+        #     }
         
-            /* Making columns smaller */
-            .dataframe-container table {
-                width: 40%;
-            }
-            </style>
-        """, unsafe_allow_html=True)
+        #     /* Making columns smaller */
+        #     .dataframe-container table {
+        #         width: 40%;
+        #     }
+        #     </style>
+        # """, unsafe_allow_html=True)
         
-        # Display the dataframe
-        st.markdown('<div class="dataframe-container">', unsafe_allow_html=True)
-        st.dataframe(df_final, width=300)
-        st.markdown('</div>', unsafe_allow_html=True)
+        # # Display the dataframe
+        # st.markdown('<div class="dataframe-container">', unsafe_allow_html=True)
+        # st.dataframe(df_final, width=300)
+        # st.markdown('</div>', unsafe_allow_html=True)
+        st.markdown("""
+        <style>
+        .styled-table {
+            border: 2px solid blue;
+            padding: 10px;
+            border-radius: 10px;
+            width: 60%;  /* Control the width of the table */
+            margin: auto;
+        }
+    
+        .styled-table th {
+            font-size: 22px;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+        }
+    
+        .styled-table td {
+            font-size: 18px;
+            text-align: center;
+        }
+    
+        .styled-table td, .styled-table th {
+            padding: 10px;
+        }
+    
+        .styled-table th, .styled-table td {
+            width: 20%;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+    
+    # Display the dataframe using st.write() with a custom class
+        st.markdown('<table class="styled-table">', unsafe_allow_html=True)
+        st.write(df_final)
+        st.markdown('</table>', unsafe_allow_html=True)
 
 # Store the top-ranked line
         
