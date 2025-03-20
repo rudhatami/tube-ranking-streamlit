@@ -221,15 +221,23 @@ if st.button("Predict"):
         # st.write(f"It's official! Your favorite line is the {favorite_line} line")
 
         
-        st.markdown("<br><br>", unsafe_allow_html=True)  # Adding spacing
-
-# Rainbow text (without HTML, since :rainbow[] only works in Markdown)
-        st.markdown('''<p style="font-size: 36px; font-weight: bold;">:rainbow[It's official!!]</p>''', unsafe_allow_html=True)
-
-# Favorite line text in a larger, bold font
-        st.markdown(f'''<p style="font-size: 24px; font-weight: bold;">Your favorite line is the {favorite_line} line!</p>''', unsafe_allow_html=True)
-
-        st.markdown("<br><br><br><br>", unsafe_allow_html=True)  # More spacing
+        st.markdown("""
+        <br><br>
+        <p style="
+        text-align: center; 
+        font-size: 50px; 
+        font-weight: bold; 
+        background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); 
+        -webkit-background-clip: text; 
+        color: transparent;">
+        It's official!!
+        </p>
+        <br><br>
+        <h2 style="text-align: center;">
+        <strong>Your favorite line is the {favorite_line} line!</strong>
+        </h2>
+        <br><br><br><br>
+        """, unsafe_allow_html=True)
 
 
 
