@@ -236,7 +236,7 @@ st.markdown("""
     
     <br><br><br><br><br><br><br><br><br><br><br><br>
     <div style="text-align: center;">
-        <span style="color: #929296 ,font-size: 14px; font-weight: bold;">
+        <span style="color: #a6a6a6 ,font-size: 14px; font-weight: bold;">
         ***DISCLAIMER: This ranking is for educational purposes only.*** 
     <br><br><br><br><br><br><br>
     <div style="text-align: center;">
