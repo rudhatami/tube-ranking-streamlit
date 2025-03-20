@@ -512,7 +512,7 @@ else:
 # """, unsafe_allow_html=True)
 st.markdown("""
     <p style="font-size: 18px; font-weight: bold;">
-    Explanation of the metrics:
+    <br><br><br><br><br><br>Explanation of the metrics:
     </p>
     <p style="font-size: 14px;">
     <u><strong>Security</strong></u>: This metric evaluates the safety of each line, considering the frequency of accidents and crimes across different boroughs.<br><br>
