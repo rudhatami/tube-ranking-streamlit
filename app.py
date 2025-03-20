@@ -233,11 +233,11 @@ st.markdown("""
     <u><strong>Cost of Living</strong></u>: This metric reflects the affordability of the boroughs served by each line, based on average rent, housing prices, and the cost of living, including pint prices.<br><br>
     <u><strong>Culture</strong></u>: Measures the cultural richness of the boroughs served by each line, based on the number of cultural sites, box office revenues, and the number of movies filmed in those areas.<br><br><br><br>
     
-    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
     <div style="text-align: center;">
         <span style="font-size: 14px; font-weight: bold;">
         ***DISCLAIMER: This ranking is for educational purposes only.*** 
-    <br><br><br>
+    <br><br><br><br><br><br><br>
     <div style="text-align: left;">
     <span style="font-size: 14px; font-weight: normal;">
         Developed for the TUBE project of Data Analytics batch #1922. 
