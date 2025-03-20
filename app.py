@@ -330,7 +330,7 @@ if st.button("Predict"):
         # st.markdown('</div>', unsafe_allow_html=True)
         st.markdown("""
             <style>
-            /* Center the dataframe on the page */
+            /* Center the dataframe container on the page */
             .dataframe-container {
                 display: flex;
                 justify-content: center;
@@ -343,7 +343,7 @@ if st.button("Predict"):
         
             /* Styling for the table */
             .dataframe-container table {
-                width: 50%;  /* Adjust to make the table narrower */
+                width: 50%;  /* Make the table narrower */
                 border-collapse: collapse;  /* Merge borders to make it clean */
             }
         
@@ -365,6 +365,12 @@ if st.button("Predict"):
                 text-align: center;
             }
         
+            /* Centering the dataframe */
+            .css-ffhzg2 { 
+                display: flex;
+                justify-content: center;
+            }
+        
             </style>
         """, unsafe_allow_html=True)
         
@@ -376,6 +382,7 @@ if st.button("Predict"):
         
         # Close the container div
         st.markdown('</div>', unsafe_allow_html=True)
+
 
 
 
