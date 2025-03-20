@@ -238,7 +238,7 @@ st.markdown("""
     <div style="color: #4d4c4c; text-align: center;">
         <span style=" font-size: 14px; font-weight: bold;">
         ***DISCLAIMER: This ranking is for educational purposes only.*** 
-    <br><br><br><br><br><br><br>
+    <br><br><br><br><br>
     <div style="color: #4b56ff; text-align: center;">
     <span style="font-size: 14px; font-weight: normal;">
         Developed for the <u><strong>TUBE project</strong></u> - Data Analytics batch #1922. 
