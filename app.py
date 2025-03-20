@@ -256,8 +256,9 @@ st.markdown("""
         <span style="font-size: 14px; font-weight: bold;">
         ***DISCLAIMER: This ranking is for educational purposes only.*** 
     <br><br>
+    <div style="text-align: left;">
     <span style="font-size: 12px; font-weight: normal;">
-        This app was developed for the TUBE project of Data Analytics batch #1922. 
+        Developed for the TUBE project of Data Analytics batch #1922. 
         <br>Team members: Josua Kaufmann, Laura Disney, Xin Yang, and Roudabeh Hatami.***
         </span>
     </div>
