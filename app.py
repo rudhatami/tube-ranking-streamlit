@@ -393,8 +393,10 @@ else:
 
 # """, unsafe_allow_html=True)
 st.markdown("""
+    <p style="font-size: 18px; font-weight: bold;">
+    Explanation of the metrics:
+    </p>
     <p style="font-size: 14px;">
-    Explanation of the metrics:<br><br>
     <strong>Security</strong>: This metric evaluates the safety of each line, considering the frequency of accidents and crimes across different boroughs.<br><br>
     <strong>Crowding</strong>: This metric gauges how busy each line is, assessing passenger density during peak hours. <br><br>
     <strong>Reliability</strong>: Measures the dependability of each line, based on factors like delays, lost customer hours, journey access time, percentage of services operated, and the proportion of kilometers covered.<br><br>
@@ -404,6 +406,7 @@ st.markdown("""
     <strong>Culture</strong>: Measures the cultural richness of the boroughs served by each line, based on the number of cultural sites, box office revenues, and the number of movies filmed in those areas.<br><br><br><br>
     </p>
 """, unsafe_allow_html=True)
+
 
 
 
