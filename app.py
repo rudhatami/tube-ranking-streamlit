@@ -127,11 +127,14 @@ st.markdown("""
     <h4 style="font-size: 18px; font-weight: normal;">
         Please weigh the below <strong>factors</strong> in terms of your priorities when taking the <strong>tube</strong>:
     </h4>
+    <h5 style="font-size: 10px; font-weight: normal;">
+        *Scroll down for a breakdown of the metrics.
+    </h5>
 """, unsafe_allow_html=True)
 
 st.markdown("""
     <h5 style="font-size: 10px; font-weight: normal;">
-        *Scorll down for the explanation to the metrics.
+        *Scroll down for a breakdown of the metrics.
     </h5>
 """, unsafe_allow_html=True)
 
