@@ -2,6 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 from PIL import Image
+
 import seaborn as sns  # Import seaborn at the top of your script
 
 
