@@ -183,7 +183,7 @@ with col7:
 
 # reliability = st.number_input("Reliability (%)",min_value=0, max_value=100, step = 10)/100
 
-total = (comfort + culture + crowding + cost_living + security + connectivity + reliability) * 100
+total = int(comfort + culture + crowding + cost_living + security + connectivity + reliability) * 100
 st.write(f'The sum of your total should be 100: {total}')
 # Button for prediction
 st.markdown('<div class="center-button">', unsafe_allow_html=True)
