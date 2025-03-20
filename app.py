@@ -385,7 +385,7 @@ if st.button("Predict"):
 
 
 
-        col1, col2, col3 = st.columns(3)
+        col1, col2, col3 = st.columns(3, spec = [1, 2, 1])
         
         
         with col2:
