@@ -148,7 +148,9 @@ with col7:
 
 
 total = int(round((comfort + culture + crowding + cost_living + security + connectivity + reliability) * 100))
-st.write(f'Sum of your total: {total}/100')
+# st.write(f'Sum of your total: {total}/100')
+st.markdown(f"<p style='font-size:14px;'>Sum of your total: {total}/100</p>", unsafe_allow_html=True)
+
 
 
 # Button for prediction
@@ -215,7 +217,7 @@ if st.button("Predict"):
 
     else:
             st.markdown("""
-            <p style="color: red; font-size: 20px;">
+            <p style="color: red; font-size: px;">
             The sum of the total should be 100
             </p>
             """, unsafe_allow_html=True)
