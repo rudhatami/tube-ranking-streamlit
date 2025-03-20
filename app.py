@@ -254,14 +254,14 @@ if st.button("Predict"):
         color: transparent;
         margin-bottom: 10px;">
         It's official!!
-    </p>
-""", unsafe_allow_html=True)
+        </p>
+        """, unsafe_allow_html=True)
 
-st.markdown(f"""
-    <p style="font-size: 24px; font-weight: bold; text-align: center; margin-top: 5px;">
+        st.markdown(f"""
+        <p style="font-size: 24px; font-weight: bold; text-align: center; margin-top: 5px;">
         Your favorite line is the {favorite_line} line!
-    </p>
-""", unsafe_allow_html=True)
+        </p>
+        """, unsafe_allow_html=True)
 
 
 
@@ -270,11 +270,11 @@ st.markdown(f"""
         # WELCOME TO THE {favorite_line} LINE
         # """)
 
-st.image(f"raw_data/{favorite_line}.png")
+        st.image(f"raw_data/{favorite_line}.png")
         
-st.write("And this is your personalised tube line ranking based on your preferences:")
+        st.write("And this is your personalised tube line ranking based on your preferences:")
         
-st.write(df_final)
+        st.write(df_final)
 
 # Store the top-ranked line
         
@@ -282,10 +282,10 @@ st.write(df_final)
         st.balloons()
 
 
-    else:
+else:
 
         st.write("The sum of the values should be 100")
-    st.markdown('</div>', unsafe_allow_html=True)
+        st.markdown('</div>', unsafe_allow_html=True)
 
 
 # with col1:
