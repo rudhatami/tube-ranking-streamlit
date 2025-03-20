@@ -242,7 +242,7 @@ if st.button("Predict"):
 
 
         st.markdown(f"""
-    <p style="font-size: 36px; font-weight: bold; text-align: center;">
+    <p style="font-size: 28px; font-weight: normal; text-align: left;">
         Your favorite line is the {favorite_line} line!
     </p>
     <br><br><br><br>
