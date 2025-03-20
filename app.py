@@ -235,12 +235,12 @@ st.markdown("""
     <u><strong>Culture</strong></u>: Measures the cultural richness of the boroughs served by each line, based on the number of cultural sites, box office revenues, and the number of movies filmed in those areas.<br><br><br><br>
     
     <br><br><br><br><br><br><br><br><br><br><br><br>
-    <div style="text-align: center;">
-        <span style="color: #a6a6a6 ,font-size: 14px; font-weight: bold;">
+    <div style="color: #a6a6a6; text-align: center;">
+        <span style=" font-size: 14px; font-weight: bold;">
         ***DISCLAIMER: This ranking is for educational purposes only.*** 
     <br><br><br><br><br><br><br>
-    <div style="text-align: center;">
-    <span style="color: #0009AB, font-size: 14px; font-weight: normal;">
+    <div style="color: #0009AB, text-align: center;">
+    <span style="font-size: 14px; font-weight: normal;">
         Developed for the <u><strong>TUBE project</strong></u> - Data Analytics batch #1922. 
         <br>Team members: Josua Kaufmann, Laura Disney, Xin Yang, and Roudabeh Hatami.
         </span>
