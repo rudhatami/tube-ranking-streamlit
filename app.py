@@ -270,11 +270,11 @@ st.markdown(f"""
         # WELCOME TO THE {favorite_line} LINE
         # """)
 
-        st.image(f"raw_data/{favorite_line}.png")
+st.image(f"raw_data/{favorite_line}.png")
         
-        st.write("And this is your personalised tube line ranking based on your preferences:")
+st.write("And this is your personalised tube line ranking based on your preferences:")
         
-        st.write(df_final)
+st.write(df_final)
 
 # Store the top-ranked line
         
