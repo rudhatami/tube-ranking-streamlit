@@ -394,7 +394,7 @@ if st.button("Predict"):
              cm = sns.color_palette("coolwarm_r", as_cmap=True)  # Generate the color map
              df_final = df_final.style.background_gradient(cmap=cm)  # Apply the gradient style
              st.dataframe(df_final)  # Display the styled dataframe
-Example DataFrame (replace with your own df_final)
+# Example DataFrame (replace with your own df_final)
 
 
 
