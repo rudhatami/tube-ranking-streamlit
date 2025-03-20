@@ -289,7 +289,13 @@ if st.button("Predict"):
             .streamlit-expanderHeader {
                 font-weight: bold;
             }
-            
+            .dataframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;  /* Full screen height to center the content vertically */
+            width: 100%;
+            }
             # .dataframe-container {
             #     border: 2px solid blue;
             #     padding: 10px;
