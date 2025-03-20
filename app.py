@@ -320,7 +320,7 @@ if st.button("Predict"):
         
         # Display the dataframe
         st.markdown('<div class="dataframe-container">', unsafe_allow_html=True)
-        st.dataframe(df_final, width=200)
+        st.dataframe(df_final, width=300)
         st.markdown('</div>', unsafe_allow_html=True)
 
 # Store the top-ranked line
