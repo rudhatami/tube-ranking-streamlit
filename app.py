@@ -246,29 +246,29 @@ if st.button("Predict"):
     st.markdown('</div>', unsafe_allow_html=True)
 
 
-with col1:
-     security = st.number_input("Security (%)", min_value=0, max_value=100, step=10) / 100
-     comfort = st.number_input("Comfort (%)", min_value=0, max_value=100, step=10) / 100
+# with col1:
+#      security = st.number_input("Security (%)", min_value=0, max_value=100, step=10) / 100
+#      comfort = st.number_input("Comfort (%)", min_value=0, max_value=100, step=10) / 100
     
-with col2:
-     crowding = st.number_input("Crowding (%)", min_value=0, max_value=100, step=10) / 100
-     culture = st.number_input("Culture (%)", min_value=0, max_value=100, step=10) / 100
-with col3:
-    reliability = st.number_input("Reliability (%)", min_value=0, max_value=100, step=10) / 100
-    cost_living = st.number_input("Cost of Living (%)", min_value=0, max_value=100, step=10) / 100
-with col4:
-    connectivity = st.number_input("Connectivity (%)", min_value=0, max_value=100, step=10) / 100
+# with col2:
+#      crowding = st.number_input("Crowding (%)", min_value=0, max_value=100, step=10) / 100
+#      culture = st.number_input("Culture (%)", min_value=0, max_value=100, step=10) / 100
+# with col3:
+#     reliability = st.number_input("Reliability (%)", min_value=0, max_value=100, step=10) / 100
+#     cost_living = st.number_input("Cost of Living (%)", min_value=0, max_value=100, step=10) / 100
+# with col4:
+#     connectivity = st.number_input("Connectivity (%)", min_value=0, max_value=100, step=10) / 100
     
-    total = comfort + culture + crowding + cost_living + security + connectivity + reliability
-    st.write(f'This is the sum of your total: {total}')
+#     total = comfort + culture + crowding + cost_living + security + connectivity + reliability
+#     st.write(f'This is the sum of your total: {total}')
 
 
-col5, col6, col7 = st.columns(3)
+# col5, col6, col7 = st.columns(3)
 
-with col5:
-     comfort = st.number_input("Comfort (%)", min_value=0, max_value=100, step=10) / 100
+# with col5:
+#      comfort = st.number_input("Comfort (%)", min_value=0, max_value=100, step=10) / 100
     
-with col6:
-     culture = st.number_input("Culture (%)", min_value=0, max_value=100, step=10) / 100
-with col7:
-    cost_living = st.number_input("Cost of Living (%)", min_value=0, max_value=100, step=10) / 100
+# with col6:
+#      culture = st.number_input("Culture (%)", min_value=0, max_value=100, step=10) / 100
+# with col7:
+#     cost_living = st.number_input("Cost of Living (%)", min_value=0, max_value=100, step=10) / 100
