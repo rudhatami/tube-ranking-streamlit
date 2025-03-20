@@ -236,11 +236,11 @@ st.markdown("""
     
     <br><br><br><br><br><br><br><br><br><br><br><br>
     <div style="text-align: center;">
-        <span style="font-size: 14px; font-weight: bold;">
+        <span style="color: #929296 ,font-size: 14px; font-weight: bold;">
         ***DISCLAIMER: This ranking is for educational purposes only.*** 
     <br><br><br><br><br><br><br>
     <div style="text-align: center;">
-    <span style="font-size: 14px; font-weight: normal;">
+    <span style="color: #0009AB, font-size: 14px; font-weight: normal;">
         Developed for the <u><strong>TUBE project</strong></u> - Data Analytics batch #1922. 
         <br>Team members: Josua Kaufmann, Laura Disney, Xin Yang, and Roudabeh Hatami.
         </span>
