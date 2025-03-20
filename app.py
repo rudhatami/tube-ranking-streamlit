@@ -284,50 +284,97 @@ if st.button("Predict"):
         # st.write(df_final)
         
 # Custom CSS for dataframe styling
+        # st.markdown("""
+        #     <style>
+        #     .streamlit-expanderHeader {
+        #         font-weight: bold;
+        #     }
+        #     # .dataframe-container {
+        #     # display: flex;
+        #     # justify-content: center;
+        #     # align-items: center;
+        #     # height: 100vh;  /* Full screen height to center the content vertically */
+        #     # width: 100%;
+        #     # }
+        #     # .dataframe-container {
+        #     #     border: 2px solid blue;
+        #     #     padding: 10px;
+        #     #     border-radius: 10px;
+        #     # }
+        
+        #     .dataframe-container th {
+        #         font-size: 30px;
+        #         font-weight: bold;
+        #         color: black;
+        #     }
+        
+        #     .dataframe-container td {
+        #         font-size: 30px;
+        #     }
+        
+        #     .dataframe-container td, .dataframe-container th {
+        #         padding: 10px;
+        #         text-align: center;
+        #     }
+        
+        #     /* Making columns smaller */
+        #     .dataframe-container table {
+        #         width: 40%;
+        #     }
+        #     </style>
+        # """, unsafe_allow_html=True)
+        
+        # # Display the dataframe
+        # st.markdown('<div class="dataframe-container">', unsafe_allow_html=True)
+        # st.dataframe(df_final, width=300)
+        # st.markdown('</div>', unsafe_allow_html=True)
         st.markdown("""
             <style>
             .streamlit-expanderHeader {
                 font-weight: bold;
             }
-            # .dataframe-container {
-            # display: flex;
-            # justify-content: center;
-            # align-items: center;
-            # height: 100vh;  /* Full screen height to center the content vertically */
-            # width: 100%;
-            # }
-            # .dataframe-container {
-            #     border: 2px solid blue;
-            #     padding: 10px;
-            #     border-radius: 10px;
-            # }
         
+            /* Container for the dataframe */
+            .dataframe-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;  /* Full screen height to center the content vertically */
+                width: 100%;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+        
+            /* Styling the table headers */
             .dataframe-container th {
-                font-size: 30px;
+                font-size: 22px;
                 font-weight: bold;
                 color: black;
             }
         
+            /* Styling the table cells */
             .dataframe-container td {
-                font-size: 30px;
+                font-size: 20px;
             }
         
+            /* Styling for both headers and data cells */
             .dataframe-container td, .dataframe-container th {
                 padding: 10px;
                 text-align: center;
             }
         
-            /* Making columns smaller */
+            /* Styling for the table */
             .dataframe-container table {
-                width: 40%;
+                width: 60%; /* Adjust this as necessary */
             }
             </style>
         """, unsafe_allow_html=True)
         
         # Display the dataframe
         st.markdown('<div class="dataframe-container">', unsafe_allow_html=True)
-        st.dataframe(df_final, width=300)
+        st.dataframe(df_final)
         st.markdown('</div>', unsafe_allow_html=True)
+
     #     st.markdown("""
     #     <style>
     #     .styled-table {
