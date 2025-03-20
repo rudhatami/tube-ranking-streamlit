@@ -220,24 +220,6 @@ if st.button("Predict"):
             </p>
             """, unsafe_allow_html=True)
 
-
-# st.markdown("""
-#     <p style="font-size: 18px; font-weight: bold;">
-#     <br><br><br><br><br><br>Explanation of the metrics:
-#     </p>
-#     <p style="font-size: 14px;">
-#     <u><strong>Security</strong></u>: This metric evaluates the safety of each line, considering the frequency of accidents and crimes across different boroughs.<br><br>
-#     <u><strong>Crowding</strong></u>: This metric gauges how busy each line is, assessing passenger density during peak hours. <br><br>
-#     <u><strong>Reliability</strong></u>: Measures the dependability of each line, based on factors like delays, lost customer hours, journey access time, percentage of services operated, and the proportion of kilometers covered.<br><br>
-#     <u><strong>Connectivity</strong></u>: Evaluates how well each line connects with other transport options, including transfers to underground lines, other public transport, the Night Tube, access lengths, average speeds, and the number of boroughs served.<br><br>
-#     <u><strong>Comfort</strong></u>: Assesses the overall comfort level of a line, including noise levels, air quality, temperature, depth of the line (underground), internet connection, and cleanliness.<br><br>
-#     <u><strong>Cost of Living</strong></u>: This metric reflects the affordability of the boroughs served by each line, based on average rent, housing prices, and the cost of living, including pint prices.<br><br>
-#     <u><strong>Culture</strong></u>: Measures the cultural richness of the boroughs served by each line, based on the number of cultural sites, box office revenues, and the number of movies filmed in those areas.<br><br><br><br>
-#     <span style="font-size: 12px; font-weight: bold;"><br><br><br><br><br><br><br><br>
-#     ***DISCLAIMER: This ranking is for educational purposes only. This app was developed for the TUBE project of Data Analytics batch #1922. Team members: Josua Kaufmann, Laura Disney, Xin Yang and Roudabeh Hatami.***
-#     </span>
-#     <br><br><br><br>
-# """, unsafe_allow_html=True)
 st.markdown("""
     <p style="font-size: 18px; font-weight: bold;">
     <br><br><br><br><br><br>Explanation of the metrics:
@@ -255,11 +237,11 @@ st.markdown("""
     <div style="text-align: center;">
         <span style="font-size: 14px; font-weight: bold;">
         ***DISCLAIMER: This ranking is for educational purposes only.*** 
-    <br><br>
+    <br><br><br>
     <div style="text-align: left;">
-    <span style="font-size: 12px; font-weight: normal;">
+    <span style="font-size: 14px; font-weight: normal;">
         Developed for the TUBE project of Data Analytics batch #1922. 
-        <br>Team members: Josua Kaufmann, Laura Disney, Xin Yang, and Roudabeh Hatami.***
+        <br>Team members: Josua Kaufmann, Laura Disney, Xin Yang, and Roudabeh Hatami.
         </span>
     </div>
     <br><br><br><br>
@@ -553,3 +535,20 @@ st.markdown("""
         # st.write(df_final.style.hide(axis="index"))
          # favorite_line = df_final["Line"][0]
         
+# st.markdown("""
+#     <p style="font-size: 18px; font-weight: bold;">
+#     <br><br><br><br><br><br>Explanation of the metrics:
+#     </p>
+#     <p style="font-size: 14px;">
+#     <u><strong>Security</strong></u>: This metric evaluates the safety of each line, considering the frequency of accidents and crimes across different boroughs.<br><br>
+#     <u><strong>Crowding</strong></u>: This metric gauges how busy each line is, assessing passenger density during peak hours. <br><br>
+#     <u><strong>Reliability</strong></u>: Measures the dependability of each line, based on factors like delays, lost customer hours, journey access time, percentage of services operated, and the proportion of kilometers covered.<br><br>
+#     <u><strong>Connectivity</strong></u>: Evaluates how well each line connects with other transport options, including transfers to underground lines, other public transport, the Night Tube, access lengths, average speeds, and the number of boroughs served.<br><br>
+#     <u><strong>Comfort</strong></u>: Assesses the overall comfort level of a line, including noise levels, air quality, temperature, depth of the line (underground), internet connection, and cleanliness.<br><br>
+#     <u><strong>Cost of Living</strong></u>: This metric reflects the affordability of the boroughs served by each line, based on average rent, housing prices, and the cost of living, including pint prices.<br><br>
+#     <u><strong>Culture</strong></u>: Measures the cultural richness of the boroughs served by each line, based on the number of cultural sites, box office revenues, and the number of movies filmed in those areas.<br><br><br><br>
+#     <span style="font-size: 12px; font-weight: bold;"><br><br><br><br><br><br><br><br>
+#     ***DISCLAIMER: This ranking is for educational purposes only. This app was developed for the TUBE project of Data Analytics batch #1922. Team members: Josua Kaufmann, Laura Disney, Xin Yang and Roudabeh Hatami.***
+#     </span>
+#     <br><br><br><br>
+# """, unsafe_allow_html=True)
