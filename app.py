@@ -240,11 +240,10 @@ st.markdown("""
     <br><br><br><br><br><br><br>
     <div style="text-align: left;">
     <span style="font-size: 14px; font-weight: normal;">
-        Developed for the TUBE project of Data Analytics batch #1922. 
+        Developed for the <u><strong>TUBE project</strong></u> - Data Analytics batch #1922. 
         <br>Team members: Josua Kaufmann, Laura Disney, Xin Yang, and Roudabeh Hatami.
         </span>
     </div>
-    <br><br><br><br>
 """, unsafe_allow_html=True)
 
 
