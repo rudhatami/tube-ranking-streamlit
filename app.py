@@ -97,10 +97,10 @@ st.markdown(
 
 st.markdown("""
     <h2 style="font-weight: bold; color: #4B56FF;">
-        Welcome to your individualised <strong>Ranking</strong>! 
+        Welcome to your individualised Ranking! 
     </h2>
     <h4 style="font-size: 18px; font-weight: normal;">
-        Please weigh the below <strong>factors</strong> in terms of your priorities when taking the <strong>tube</strong>:
+        Please weigh the below <strong>factors</strong> in terms of <u><strong>your</strong></u> priorities when taking the <strong>tube</strong>:
     </h4>
 """, unsafe_allow_html=True)
 
@@ -239,7 +239,7 @@ st.markdown("""
         <span style="font-size: 14px; font-weight: bold;">
         ***DISCLAIMER: This ranking is for educational purposes only.*** 
     <br><br><br><br><br><br><br>
-    <div style="text-align: left;">
+    <div style="text-align: center;">
     <span style="font-size: 14px; font-weight: normal;">
         Developed for the <u><strong>TUBE project</strong></u> - Data Analytics batch #1922. 
         <br>Team members: Josua Kaufmann, Laura Disney, Xin Yang, and Roudabeh Hatami.
