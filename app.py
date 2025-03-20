@@ -328,7 +328,7 @@ if st.button("Predict"):
         # st.markdown('<div class="dataframe-container">', unsafe_allow_html=True)
         # st.dataframe(df_final, width=300)
         # st.markdown('</div>', unsafe_allow_html=True)
-        st.markdown("""
+                st.markdown("""
             <style>
             .streamlit-expanderHeader {
                 font-weight: bold;
@@ -347,14 +347,16 @@ if st.button("Predict"):
         
             /* Styling the table headers */
             .dataframe-container th {
-                font-size: 22px;
+                font-size: 25px;
                 font-weight: bold;
                 color: black;
+                border: 2px solid #4B56FF;  /* Thicker border for the header */
             }
         
             /* Styling the table cells */
             .dataframe-container td {
                 font-size: 20px;
+                border: 2px solid #4B56FF;  /* Thicker border for the cells */
             }
         
             /* Styling for both headers and data cells */
@@ -365,14 +367,15 @@ if st.button("Predict"):
         
             /* Styling for the table */
             .dataframe-container table {
-                width: 60%; /* Adjust this as necessary */
+                width: 50%; /* Adjust this to make it narrower */
+                border-collapse: collapse; /* Collapse borders for a cleaner look */
             }
             </style>
         """, unsafe_allow_html=True)
         
         # Display the dataframe
         st.markdown('<div class="dataframe-container">', unsafe_allow_html=True)
-        st.dataframe(df_final)
+        st.dataframe(df_final, use_container_width=True)
         st.markdown('</div>', unsafe_allow_html=True)
 
     #     st.markdown("""
