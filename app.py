@@ -388,40 +388,40 @@ if st.button("Predict"):
 
         
 
-        # col1, col2, col3 = st.columns(spec = [1, 2, 1])
+        col1, col2, col3 = st.columns(spec = [1, 2, 1])
 
-        # with col2:
-        #      cm = sns.color_palette("coolwarm_r", as_cmap=True)  # Generate the color map
-        #      df_final = df_final.style.background_gradient(cmap=cm)  # Apply the gradient style
-             # st.dataframe(df_final)  # Display the styled dataframe
-# Example DataFrame (replace with your own df_final)
-
-
-
-# Example DataFrame (replace with your own df_final)
-        df_final = pd.DataFrame({
-            'Line': df_final["line"],
-            'Score': df_final["Score"]
-        })
-        
-        # Style the dataframe
-        df_final = df_final.style.set_table_styles(
-            [
-                {'selector': 'th', 
-                 'props': [('font-size', '20px'), ('font-weight', 'bold'), ('text-align', 'center')]},  # Column names
-                {'selector': 'td', 
-                 'props': [('font-size', '18px'), ('text-align', 'center')]},  # Data rows
-                {'selector': 'thead th', 
-                 'props': [('background-color', '#D3D3D3')]},  # Highlight first row (headers) color
-                {'selector': 'tbody tr:nth-child(1)', 
-                 'props': [('background-color', '#FFEB3B')]}  # Highlight the first row in yellow
-            ]
-        ).hide(axis="index")  # Hide the index column
-        
-        # Display the styled dataframe
-        col1, col2, col3 = st.columns([1, 2, 1])  # Columns to center it
         with col2:
-            st.write(df_final)
+             cm = sns.color_palette("coolwarm_r", as_cmap=True)  # Generate the color map
+             df_final = df_final.style.background_gradient(cmap=cm)  # Apply the gradient style
+             st.dataframe(df_final)  # Display the styled dataframe
+Example DataFrame (replace with your own df_final)
+
+
+
+# # Example DataFrame (replace with your own df_final)
+#         df_final = pd.DataFrame({
+#             'Line': df_final["line"],
+#             'Score': df_final["Score"]
+#         })
+        
+#         # Style the dataframe
+#         df_final = df_final.style.set_table_styles(
+#             [
+#                 {'selector': 'th', 
+#                  'props': [('font-size', '20px'), ('font-weight', 'bold'), ('text-align', 'center')]},  # Column names
+#                 {'selector': 'td', 
+#                  'props': [('font-size', '18px'), ('text-align', 'center')]},  # Data rows
+#                 {'selector': 'thead th', 
+#                  'props': [('background-color', '#D3D3D3')]},  # Highlight first row (headers) color
+#                 {'selector': 'tbody tr:nth-child(1)', 
+#                  'props': [('background-color', '#FFEB3B')]}  # Highlight the first row in yellow
+#             ]
+#         ).hide(axis="index")  # Hide the index column
+        
+#         # Display the styled dataframe
+#         col1, col2, col3 = st.columns([1, 2, 1])  # Columns to center it
+#         with col2:
+#             st.write(df_final)
 
 
 
