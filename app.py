@@ -395,29 +395,33 @@ if st.button("Predict"):
         #      df_final = df_final.style.background_gradient(cmap=cm)  # Apply the gradient style
              # st.dataframe(df_final)  # Display the styled dataframe
 # Example DataFrame (replace with your own df_final)
+
+
+        # Example DataFrame (replace with your own df_final)
         df_final = pd.DataFrame({
             'Line': ['Line 1', 'Line 2', 'Line 3'],
             'Score': [80, 90, 85]
         })
         
         # Style the dataframe
-        df_final = df_final.style \
-            .set_table_styles(
-                [{'selector': 'th', 
-                  'props': [('font-size', '20px'), ('font-weight', 'bold'), ('text-align', 'center')]},  # Column names
-                 {'selector': 'td', 
-                  'props': [('font-size', '18px'), ('text-align', 'center')]},  # Data rows
-                 {'selector': 'thead th', 
-                  'props': [('background-color', '#D3D3D3')]},  # Highlight first row (headers) color
-                 {'selector': 'tbody tr:nth-child(1)', 
-                  'props': [('background-color', '#FFEB3B')]}  # Highlight the first row in yellow
-            ) \
-            .hide(axis="index")  # Hide the index column
-            
+        df_final = df_final.style.set_table_styles(
+            [
+                {'selector': 'th', 
+                 'props': [('font-size', '20px'), ('font-weight', 'bold'), ('text-align', 'center')]},  # Column names
+                {'selector': 'td', 
+                 'props': [('font-size', '18px'), ('text-align', 'center')]},  # Data rows
+                {'selector': 'thead th', 
+                 'props': [('background-color', '#D3D3D3')]},  # Highlight first row (headers) color
+                {'selector': 'tbody tr:nth-child(1)', 
+                 'props': [('background-color', '#FFEB3B')]}  # Highlight the first row in yellow
+            ]
+        ).hide(axis="index")  # Hide the index column
+        
         # Display the styled dataframe
         col1, col2, col3 = st.columns([1, 2, 1])  # Columns to center it
         with col2:
             st.write(df_final)
+
 
     #     st.markdown("""
     #     <style>
