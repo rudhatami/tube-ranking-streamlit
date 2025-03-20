@@ -330,58 +330,50 @@ if st.button("Predict"):
         # st.markdown('</div>', unsafe_allow_html=True)
         st.markdown("""
             <style>
-            /* Center the dataframe container on the page */
+            /* Centering the dataframe */
             .dataframe-container {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 100vh;  /* Center vertically */
-                width: 100%;
-                padding: 20px;
-                box-sizing: border-box;
+                padding-top: 50px;
+                padding-bottom: 50px;
             }
         
-            /* Styling for the table */
+            /* Table Styling */
             .dataframe-container table {
-                width: 50%;  /* Make the table narrower */
-                border-collapse: collapse;  /* Merge borders to make it clean */
+                width: 50%;  /* Narrower table */
+                border-collapse: collapse;
             }
         
-            /* Column header styling */
+            /* Styling for the column headers */
             .dataframe-container th {
-                font-size: 24px;  /* Larger font size */
-                font-weight: bold;  /* Bold column names */
+                font-size: 24px;  /* Bold and larger column names */
+                font-weight: bold;
                 color: black;
-                border: 2px solid #4B56FF;  /* Border color for header */
-                padding: 12px;  /* Add padding for clarity */
+                padding: 12px;
+                border: 2px solid #4B56FF;  /* Blue border */
                 text-align: center;
             }
         
-            /* Cell styling */
+            /* Styling for the table cells */
             .dataframe-container td {
-                font-size: 20px;  /* Larger font size for the values */
-                border: 2px solid #4B56FF;  /* Border color for cell */
+                font-size: 20px;  /* Larger font size */
+                border: 2px solid #4B56FF;  /* Blue border for cells */
                 padding: 12px;
                 text-align: center;
             }
-        
-            /* Centering the dataframe */
-            .css-ffhzg2 { 
-                display: flex;
-                justify-content: center;
-            }
-        
             </style>
         """, unsafe_allow_html=True)
         
-        # Wrap the dataframe with a custom container for styling
+        # Center the dataframe in a custom container
         st.markdown('<div class="dataframe-container">', unsafe_allow_html=True)
         
-        # Display the dataframe in the styled container
-        st.dataframe(df_final, use_container_width=False)
+        # Display the dataframe (don't use `width` directly in st.dataframe, instead use CSS for styling)
+        st.dataframe(df_final)
         
-        # Close the container div
+        # Close the div for the container
         st.markdown('</div>', unsafe_allow_html=True)
+
 
 
 
