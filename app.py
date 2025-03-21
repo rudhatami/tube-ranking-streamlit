@@ -21,7 +21,7 @@ st.markdown("""
             font-family: 'Hammersmith One', sans-serif;
         }
         
-        /* For the main title (st.title) */
+        /* For the main titltimee (st.title) */
         .css-1y4kczv {
             font-family: 'Hammersmith One', sans-serif;
         }
@@ -157,7 +157,7 @@ st.markdown(f"<p style='font-size:14px; text-decoration: underline;'>Sum of your
 # Button for prediction
 st.markdown('<div class="center-button">', unsafe_allow_html=True)
 if st.button("Predict"):
-    progress_text = "Operation in progress. Please wait."
+    progress_text = "Getting your own ranking! Please wait."
     my_bar = st.progress(0, text=progress_text)
     
     for percent_complete in range(100):
