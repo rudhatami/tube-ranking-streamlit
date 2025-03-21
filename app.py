@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 from PIL import Image
 import seaborn as sns  
+import time
 
 
 
@@ -156,6 +157,14 @@ st.markdown(f"<p style='font-size:14px; text-decoration: underline;'>Sum of your
 # Button for prediction
 st.markdown('<div class="center-button">', unsafe_allow_html=True)
 if st.button("Predict"):
+    progress_text = "Operation in progress. Please wait."
+    my_bar = st.progress(0, text=progress_text)
+    
+    for percent_complete in range(100):
+        time.sleep(0.01)
+        my_bar.progress(percent_complete + 1, text=progress_text)
+    time.sleep(1)
+    my_bar.empty()
 
     if comfort + culture + crowding + cost_living + security + connectivity + reliability == 1:
 
